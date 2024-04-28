@@ -54,8 +54,12 @@ void U3DBlockTileComponent::Rotate90Degrees()
 			}
 		}
 	}
-
 	memcpy(bVoxels, RotatedVoxels, sizeof(bVoxels));
+	
+	FRotator CurrentRotation = FRotator::ZeroRotator;
+	FRotator NewRotation = FRotator(CurrentRotation.Pitch, CurrentRotation.Yaw + 90.0f, CurrentRotation.Roll);
+
+	GetOwner()->SetActorRotation(NewRotation);
 }
 
 void U3DBlockTileComponent::MirrorX()
@@ -73,6 +77,10 @@ void U3DBlockTileComponent::MirrorX()
 			}
 		}
 	}
+	
+	FVector CurrentScale = GetOwner()->GetActorScale3D();
+	FVector MirroredScale = FVector(-CurrentScale.X, CurrentScale.Y, CurrentScale.Z);
+	GetOwner()->SetActorScale3D(MirroredScale);
 
 	memcpy(bVoxels, MirroredVoxels, sizeof(bVoxels));
 }
@@ -93,6 +101,10 @@ void U3DBlockTileComponent::MirrorY()
 		}
 	}
 
+	FVector CurrentScale = GetOwner()->GetActorScale3D();
+	FVector MirroredScale = FVector(CurrentScale.X, -CurrentScale.Y, CurrentScale.Z);
+	GetOwner()->SetActorScale3D(MirroredScale);
+	
 	memcpy(bVoxels, MirroredVoxels, sizeof(bVoxels));
 }
 
@@ -143,3 +155,26 @@ bool U3DBlockTileComponent::GetIsCornerFilled(const FIntVector& ThisLocation, co
 	}
 	return true;
 }
+
+TArray<TArray<TArray<bool>>> U3DBlockTileComponent::GetVoxels()
+{
+	const int32 Size = 2;
+	TArray<TArray<TArray<bool>>> Voxels;
+	Voxels.SetNum(Size);
+
+	for (int32 i = 0; i < Size; ++i)
+	{
+		Voxels[i].SetNum(Size);
+		for (int32 j = 0; j < Size; ++j)
+		{
+			Voxels[i][j].SetNum(Size);
+			for (int32 k = 0; k < Size; ++k)
+			{
+				Voxels[i][j][k] = bVoxels[i][j][k];
+			}
+		}
+	}
+
+	return Voxels;
+}
+

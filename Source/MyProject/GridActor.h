@@ -67,3 +67,5 @@ private:
 	// Array to hold references to spawned block actors
 	TArray<ABuildBlock*> SpawnedBlocks;
 };
+
+

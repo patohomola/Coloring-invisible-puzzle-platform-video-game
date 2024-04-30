@@ -36,10 +36,16 @@ void ABuildBlock::InitializeBlock()
 // Method to select a random material from the list
 UMaterialInterface* ABuildBlock::GetRandomMaterial()
 {
-	if (BlockMaterials.Num() > 0)
+	/*if (BlockMaterials.Num() > 0)
 	{
 		int32 RandomIndex = FMath::RandRange(0, BlockMaterials.Num() - 1);
 		return BlockMaterials[RandomIndex];
+	}*/
+	
+	if (BlockMaterialsCleanCanvas.Num() > 0)
+	{
+		int32 RandomIndex = FMath::RandRange(0, BlockMaterialsCleanCanvas.Num() - 1);
+		return BlockMaterialsCleanCanvas[RandomIndex];
 	}
 	return nullptr;
 }
@@ -52,3 +58,4 @@ void ABuildBlock::RandomRotateBlock()
 		BlockMesh->SetRelativeRotation(NewRotation);
 	}
 }
+

@@ -8,18 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/AFloorBuildBlock.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/AFloorBuildBlock.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/AGroundFloorBuildBlock.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/AGroundFloorBuildBlock.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/House_masked_splats_invicible.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/House_masked_splats_invicible.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/PoschodieA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/PoschodieA.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/PoscodieB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/PoscodieB.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/Prizemie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/Prizemie.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/Strecha.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/Strecha.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/BuildBlock.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/BuildBlock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +135,7 @@
       <workItem from="1714463882220" duration="231000" />
       <workItem from="1714464644896" duration="1734000" />
       <workItem from="1714466478109" duration="4823000" />
-      <workItem from="1714487484922" duration="7392000" />
+      <workItem from="1714487484922" duration="12014000" />
     </task>
     <servers />
   </component>

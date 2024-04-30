@@ -35,12 +35,16 @@ void AGridActor::Tick(float DeltaTime)
 void AGridActor::GenerateGrid()
 {
 	// Spawn block actors at random locations in the grid
+	
 	for (int32 Row = 0; Row < NumRows; ++Row)
 	{
-		for (int32 Column = 0; Column < NumColumns; ++Column)
-		{
-			BuildHouse(Row,Column,FMath::RandRange(2,NumLayers));
-		}
+		BuildHouse(Row,0,FMath::RandRange(3,NumLayers));
+		BuildHouse(Row,NumColumns-1,FMath::RandRange(3,NumLayers));
+	}
+	for (int32 Column = 1; Column < NumColumns-1; ++Column)
+	{
+		BuildHouse(0,Column,FMath::RandRange(3,NumLayers));
+		BuildHouse(NumRows-1,Column,FMath::RandRange(3,NumLayers));
 	}
 	
 }

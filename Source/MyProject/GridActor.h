@@ -34,7 +34,7 @@ public:
 	int32 NumRows;
 
 	UPROPERTY(EditAnywhere)
-	int32 NumColumns;
+	int32 NumColumns; 
 
 	UPROPERTY(EditAnywhere)
 	int32 NumLayers;
@@ -60,7 +60,7 @@ public:
 	void GenerateGrid();
 
 	UFUNCTION(BlueprintCallable)
-	void BuildHouse(int32 X, int32 Y, int32 Height);
+	void BuildHouse(int32 X, int32 Y, int32 Z, int32 Height);
 	
 
 private:

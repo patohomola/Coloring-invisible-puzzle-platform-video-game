@@ -38,18 +38,18 @@ void AGridActor::GenerateGrid()
 	
 	for (int32 Row = 0; Row < NumRows; ++Row)
 	{
-		BuildHouse(Row,0,FMath::RandRange(3,NumLayers));
-		BuildHouse(Row,NumColumns-1,FMath::RandRange(3,NumLayers));
+		BuildHouse(Row,0,0,FMath::RandRange(3,NumLayers));
+		BuildHouse(Row,NumColumns-1,0,FMath::RandRange(3,NumLayers));
 	}
 	for (int32 Column = 1; Column < NumColumns-1; ++Column)
 	{
-		BuildHouse(0,Column,FMath::RandRange(3,NumLayers));
-		BuildHouse(NumRows-1,Column,FMath::RandRange(3,NumLayers));
+		BuildHouse(0,Column,0,FMath::RandRange(3,NumLayers));
+		BuildHouse(NumRows-1,Column,0,FMath::RandRange(3,NumLayers));
 	}
 	
 }
 
-void AGridActor::BuildHouse(int32 X, int32 Y, int32 Height)
+void AGridActor::BuildHouse(int32 X, int32 Y,int32 Z, int32 Height)
 {
 	if (GroundBlockActorClasses.Num() == 0 || FloorBlockActorClasses.Num() == 0 || RoofBlockActorClasses.Num() == 0)
 	{
@@ -57,7 +57,7 @@ void AGridActor::BuildHouse(int32 X, int32 Y, int32 Height)
 		return;
 	}
 
-	FVector StartLocation = GetActorLocation()+FVector(X * ElementSpacing, Y * ElementSpacing, 0);
+	FVector StartLocation = GetActorLocation()+FVector(X * ElementSpacing, Y * ElementSpacing, Z*ElementHeightSpacing);
 	FRotator Rotation = FRotator::ZeroRotator;
 
 	for (int32 Layer = 0; Layer < Height; ++Layer)

@@ -8,9 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DTM_GrazingAngle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DTM_GrazingAngle.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DetectEdges_Depth.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DetectEdges_Depth.uasset" afterDir="false" />
@@ -19,8 +16,6 @@
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_Mask_Depth.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_Mask_Depth.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/PPI_OutlobeShader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PPI_OutlobeShader.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/PP_OutlineShader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PP_OutlineShader.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BuildBlock.h" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -148,6 +144,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -155,7 +152,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/MyProject/Room.h</url>
+          <url>file://$PROJECT_DIR$/Source/MyProject/Rooms/Room.h</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

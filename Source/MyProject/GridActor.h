@@ -26,8 +26,6 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
 
 	// Number of rows and columns in the grid
 	UPROPERTY(EditAnywhere)
@@ -51,7 +49,6 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<AFloorBuildBlock>> FloorBlockActorClasses;
-
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<ARoofBuildBlock>> RoofBlockActorClasses;	
 
@@ -59,8 +56,11 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void GenerateGrid();
 
-	UFUNCTION(BlueprintCallable)
+	//UFUNCTION(BlueprintCallable)
 	void BuildHouse(int32 X, int32 Y, int32 Z, int32 Height);
+
+	UFUNCTION(BlueprintCallable)
+	void BuildHouse(FIntVector position, int32 Height);
 	
 
 private:

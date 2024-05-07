@@ -8,14 +8,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DTM_GrazingAngle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DTM_GrazingAngle.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DetectEdges_Depth.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DetectEdges_Depth.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DetectEdges_NormaL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DetectEdges_NormaL.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_GetKernel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_GetKernel.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_Mask_Depth.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_Mask_Depth.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/PPI_OutlobeShader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PPI_OutlobeShader.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/PostProcess/PP_OutlineShader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PP_OutlineShader.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +145,7 @@
       <workItem from="1714545092358" duration="1473000" />
       <workItem from="1714909048565" duration="594000" />
       <workItem from="1714909820013" duration="5490000" />
+      <workItem from="1715107278264" duration="7578000" />
     </task>
     <servers />
   </component>

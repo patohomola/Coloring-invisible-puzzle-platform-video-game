@@ -22,14 +22,10 @@ void AGridActor::BeginPlay()
 	Super::BeginPlay();
 
 	// Generate the grid when the game starts
-	GenerateGrid();
+	//GenerateGrid();
 }
 
-// Called every frame
-void AGridActor::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-}
+
 
 // Method to generate the 3D grid and spawn block actors
 void AGridActor::GenerateGrid()
@@ -46,7 +42,6 @@ void AGridActor::GenerateGrid()
 		BuildHouse(0,Column,0,FMath::RandRange(3,NumLayers));
 		BuildHouse(NumRows-1,Column,0,FMath::RandRange(3,NumLayers));
 	}
-	
 }
 
 void AGridActor::BuildHouse(int32 X, int32 Y,int32 Z, int32 Height)
@@ -95,4 +90,10 @@ void AGridActor::BuildHouse(int32 X, int32 Y,int32 Z, int32 Height)
 			}
 		}
 	}
+}
+
+
+void AGridActor::BuildHouse(FIntVector position, int32 Height)
+{
+	BuildHouse(position.X,position.Y,position.Z,Height);	
 }

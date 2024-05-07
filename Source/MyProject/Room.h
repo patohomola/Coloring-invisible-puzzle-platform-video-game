@@ -21,7 +21,7 @@ public:
 	ARoom();
 
 	UFUNCTION(Blueprintable)
-	FVector GenerateRoom(FVector StartPos, int32 SizeX,int32 SizeY,int32 SizeZ);
+	FIntVector GenerateRoom(FIntVector StartPos, int32 SizeX,int32 SizeY,int32 SizeZ);
 
 protected:
 	// Called when the game starts or when spawned

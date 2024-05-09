@@ -8,21 +8,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DTM_GrazingAngle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_DTM_GrazingAngle.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_GetKernel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_GetKernel.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_Mask_Depth.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/Functions/MF_Mask_Depth.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/PPI_OutlobeShader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PPI_OutlobeShader.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/PP_OutlineShader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PP_OutlineShader.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/PrototypeLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/PrototypeLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_MaskedSplats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_MaskedSplats.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/Colloring.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/Colloring.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/House_masked_splats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/House_masked_splats.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/House_masked_splats_invicible.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/House_masked_splats_invicible.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/New_house/MA_Poschodie_A.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/New_house/MA_Poschodie_A.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/PoschodieA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/PoschodieA.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/PoscodieB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/PoscodieB.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/Prizemie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/Prizemie.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/house_collor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/house_collor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/house/whiteCanvas.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/BuildBlock.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/BuildBlock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +146,9 @@
       <workItem from="1714909048565" duration="594000" />
       <workItem from="1714909820013" duration="5490000" />
       <workItem from="1715107278264" duration="7578000" />
+      <workItem from="1715123007838" duration="389000" />
+      <workItem from="1715165251759" duration="1617000" />
+      <workItem from="1715291984574" duration="916000" />
     </task>
     <servers />
   </component>
@@ -163,6 +166,11 @@
           <url>file://$PROJECT_DIR$/Source/MyProject/Rooms/Room.h</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/MyProject/RoomBuilder.h</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

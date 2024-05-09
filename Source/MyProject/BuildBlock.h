@@ -35,6 +35,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	TArray<class UMaterialInterface*> BlockMaterialsCleanCanvas;
 
+	UPROPERTY(EditAnywhere)
+	UMaterialInterface* LayerSplatMaterial;
+
 	// Method to initialize the block
 	UFUNCTION(BlueprintCallable)
 	void InitializeBlock();

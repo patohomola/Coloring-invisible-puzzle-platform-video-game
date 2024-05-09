@@ -17,7 +17,7 @@ public:
 	// Sets default values for this actor's properties
 	ARoomBuilder();
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere) 
 	FIntVector Road = FIntVector(0,0,0);
 
 	UPROPERTY(EditAnywhere)

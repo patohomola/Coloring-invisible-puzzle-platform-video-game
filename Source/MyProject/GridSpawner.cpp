@@ -5,7 +5,7 @@
 
 #include "GridSpawner.h"
 #include "Engine/World.h"
-#include "3DBlockTileComponent.h"
+
 // Sets default values
 AGridSpawner::AGridSpawner()
 {
@@ -42,16 +42,6 @@ void AGridSpawner::SpawnGrid()
 				int32 BlockIndex = FMath::RandRange(0, BlockTypes.Num() - 1);
 				const FBlockInfo& BlockInfo = BlockTypes[BlockIndex];
 				AActor* NewBlock = GetWorld()->SpawnActor<AActor>(BlockInfo.BlockActor, NewLocation, FRotator::ZeroRotator);
-				if(FMath::RandRange(0, 1)==0)
-				{
-					U3DBlockTileComponent* Tile =NewBlock->FindComponentByClass<U3DBlockTileComponent>();
-					if(Tile)
-					{
-						//Tile->MirrorX();
-						Tile->Rotate90Degrees();
-						//Tile->MirrorY();
-					}
-				}
 			}
 		}
 	}

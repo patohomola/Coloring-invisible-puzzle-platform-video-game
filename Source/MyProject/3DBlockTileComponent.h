@@ -44,9 +44,7 @@ public:
 
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Boolean Array")//, meta = (ClampMin = "8", ClampMax = "8"))
-	TArray<bool> VoxelData={false,false,false,false,false,false,false,false}; // Pole boolean hodnôt veľkosti
-
-	TArray<TArray<TArray<bool>>> GetVoxels();
+	TArray<bool> VoxelData={false,false,false,false,false,false,false,false}; // Pole boolean hodnôt veľkosti 
 	
 private:
 

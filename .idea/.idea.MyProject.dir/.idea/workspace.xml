@@ -9,15 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/House_masked_splats_invicible.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/House_masked_splats_invicible.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/PoschodieA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/PoschodieA.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/PoscodieB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/PoscodieB.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Prizemie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/Prizemie.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Strecha.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/house/Strecha.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +27,7 @@
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BuildBlock.h" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -45,7 +42,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Uproject.MyProject.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;BuildingTest&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -61,6 +59,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CidrLocalAttachDebugger.recentlyUsed">
+      <recent name="com.jetbrains.rider.cpp.debugger.RiderCppLLDBDriverConfiguration" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MyProject" type="Uproject" factoryName="rider.uproject">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/MyProject.uproject" />
@@ -136,13 +139,42 @@
       <workItem from="1714464644896" duration="1734000" />
       <workItem from="1714466478109" duration="4823000" />
       <workItem from="1714487484922" duration="12014000" />
+      <workItem from="1714545092358" duration="1473000" />
+      <workItem from="1714909048565" duration="594000" />
+      <workItem from="1714909820013" duration="5490000" />
+      <workItem from="1715107278264" duration="7578000" />
+      <workItem from="1715123007838" duration="389000" />
+      <workItem from="1715165251759" duration="1617000" />
+      <workItem from="1715291984574" duration="916000" />
+      <workItem from="1715891524513" duration="5551000" />
+      <workItem from="1715953897700" duration="604000" />
+      <workItem from="1716216900952" duration="1522000" />
+      <workItem from="1716230151531" duration="684000" />
+      <workItem from="1716230936283" duration="7363000" />
+      <workItem from="1716239261636" duration="125000" />
+      <workItem from="1716239450893" duration="445000" />
+      <workItem from="1716240016838" duration="708000" />
+      <workItem from="1716241489230" duration="484000" />
+      <workItem from="1716288170440" duration="19324000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/MyProject/Rooms/Room.h</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

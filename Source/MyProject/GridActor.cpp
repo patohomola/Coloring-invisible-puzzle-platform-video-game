@@ -2,6 +2,8 @@
 
 #include "GridActor.h"
 
+//#include "Runtime/TraceLog/standalone_epilogue.h"
+
 // Sets default values
 AGridActor::AGridActor()
 {
@@ -34,17 +36,17 @@ void AGridActor::GenerateGrid()
 	
 	for (int32 Row = 0; Row < NumRows; ++Row)
 	{
-		BuildHouse(Row,0,0,FMath::RandRange(3,NumLayers));
-		BuildHouse(Row,NumColumns-1,0,FMath::RandRange(3,NumLayers));
+		BuildHouse(Row,0,0,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
+		BuildHouse(Row,NumColumns-1,0,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
 	}
 	for (int32 Column = 1; Column < NumColumns-1; ++Column)
 	{
-		BuildHouse(0,Column,0,FMath::RandRange(3,NumLayers));
-		BuildHouse(NumRows-1,Column,0,FMath::RandRange(3,NumLayers));
+		BuildHouse(0,Column,0,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
+		BuildHouse(NumRows-1,Column,0,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
 	}
 }
 
-void AGridActor::BuildHouse(int32 X, int32 Y,int32 Z, int32 Height)
+void AGridActor::BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme Theme)
 {
 	if (GroundBlockActorClasses.Num() == 0 || FloorBlockActorClasses.Num() == 0 || RoofBlockActorClasses.Num() == 0)
 	{
@@ -84,16 +86,40 @@ void AGridActor::BuildHouse(int32 X, int32 Y,int32 Z, int32 Height)
 			ABuildBlock* NewBlockActor = GetWorld()->SpawnActor<ABuildBlock>(BlockActorClass, SpawnLocation, Rotation);
 			if (NewBlockActor)
 			{
-				NewBlockActor->InitializeBlock();
+				NewBlockActor->InitializeBlock(EHouseTheme::Blank);
 				NewBlockActor->RandomRotateBlock();
 				SpawnedBlocks.Add(NewBlockActor);
 			}
 		}
 	}
 }
-
-
-void AGridActor::BuildHouse(FIntVector position, int32 Height)
+void AGridActor::BuildPlatform(FVector position, FVector scalingFactor, EMaterialSplat type)
 {
-	BuildHouse(position.X,position.Y,position.Z,Height);	
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.Owner = this;
+	SpawnParams.Instigator = GetInstigator();
+
+	FVector SpawnLocation = GetActorLocation()+FVector(position.X * ElementSpacing,
+		position.Y * ElementSpacing, position.Z*ElementHeightSpacing); // Example location
+	FRotator SpawnRotation = FRotator::ZeroRotator;
+	const FVector Scale=FVector(scalingFactor.X * ElementSpacing/100,
+	                            scalingFactor.Y * ElementSpacing/100, scalingFactor.Z*ElementHeightSpacing/100);
+
+	// Spawn the platform
+	
+	AGroundPlatform* NewPlatform = GetWorld()->SpawnActor<AGroundPlatform>(GroundPlatform, SpawnLocation, SpawnRotation, SpawnParams);
+
+	if (NewPlatform)
+	{
+		// Initialize platform size (example size)
+		NewPlatform->InitializePlatform(Scale);
+		NewPlatform->setMaterialByType(type);
+	}
+}
+
+
+
+void AGridActor::BuildHouse(FIntVector position, int32 Height, EHouseTheme Theme)
+{
+	BuildHouse(position.X,position.Y,position.Z,Height, Theme);	
 }

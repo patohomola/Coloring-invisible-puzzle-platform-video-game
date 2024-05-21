@@ -6,6 +6,14 @@
 #include "BuildBlock.generated.h"
 //#include "BuildBlock.h"
 
+UENUM(BlueprintType)
+enum class EHouseTheme : uint8
+{
+	Normal UMETA(DisplayName = "Normal"),
+	Transparent UMETA(DisplayName = "Transparent"),
+	Blank UMETA(DisplayName="Blank" ),
+};
+
 UCLASS()
 class MYPROJECT_API ABuildBlock : public AActor
 {
@@ -40,7 +48,7 @@ public:
 
 	// Method to initialize the block
 	UFUNCTION(BlueprintCallable)
-	void InitializeBlock();
+	void InitializeBlock(EHouseTheme Theme);
 
 	UFUNCTION(BlueprintCallable)
 	void RandomRotateBlock();

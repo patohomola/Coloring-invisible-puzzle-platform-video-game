@@ -42,17 +42,20 @@ FIntVector ARoom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, in
 		FIntVector BuildPos = StartPos + FIntVector(Row-Ofset,0,0);
 		FIntVector BuildPos2 = StartPos + FIntVector(Row-Ofset,NumColumns-1,0);
 		if(BuildPos!=StartPos)
-			GridActor->BuildHouse(BuildPos,FMath::RandRange(3,NumLayers));
+			GridActor->BuildHouse(BuildPos,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
 		if(BuildPos2!=exitVector)
-			GridActor->BuildHouse(BuildPos2,FMath::RandRange(3,NumLayers));
+			GridActor->BuildHouse(BuildPos2,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
 	}
 	for (int32 Column = 1; Column < NumColumns-1; ++Column)
 	{
 		FIntVector BuildPos = StartPos + FIntVector(SizeX-1-Ofset,Column,0);
 		FIntVector BuildPos2 = StartPos + FIntVector(-Ofset,Column,0);
-		GridActor->BuildHouse(BuildPos,FMath::RandRange(3,NumLayers));
-		GridActor->BuildHouse(BuildPos2,FMath::RandRange(3,NumLayers));
+		GridActor->BuildHouse(BuildPos,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
+		GridActor->BuildHouse(BuildPos2,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
 	}
+	GridActor->BuildPlatform(FVector(StartPos)-FVector(Ofset+0.5f,0+0.5f,1),
+		 FVector(SizeX,SizeY,1),
+		EMaterialSplat::Visible);
 	return exitVector+FIntVector(0,1,0);
 }
 

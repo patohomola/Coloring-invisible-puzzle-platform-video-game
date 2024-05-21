@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "GridActor.h"
+#include "GroundPlatform.h"
 
 #include "Room.generated.h"
 

@@ -24,12 +24,26 @@ void ABuildBlock::Tick(float DeltaTime)
 }
 
 // Method to initialize the block
-void ABuildBlock::InitializeBlock()
+void ABuildBlock::InitializeBlock(EHouseTheme Theme)
 {
-	if (BlockMaterials.Num() > 0 && BlockMesh)
+	TArray<class UMaterialInterface*> Materials;
+	switch (Theme)
 	{
+	case EHouseTheme::Normal:
+		Materials=BlockMaterials;
+		break;
+	case EHouseTheme::Blank:
+		Materials=BlockMaterialsCleanCanvas;
+		break;
+	case EHouseTheme::Transparent:
+		Materials=BlockMaterialsCleanCanvas;
+	}
+	
+	if (Materials.Num() > 0 && BlockMesh)
+	{
+		int32 RandomIndex = FMath::RandRange(0, Materials.Num() - 1);
 		// Set the material of the mesh to a random material from the list
-		BlockMesh->SetMaterial(0, GetRandomMaterial());
+		BlockMesh->SetMaterial(0, Materials[RandomIndex]);
 	}
 }
 

@@ -8,8 +8,10 @@
 #include "AGroundFloorBuildBlock.h"
 #include "AFloorBuildBlock.h"
 #include "ARoofBuildBlock.h"
+#include  "GroundPlatform.h"
 
 #include "GridActor.generated.h"
+
 
 
 UCLASS()
@@ -52,17 +54,23 @@ public:
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<ARoofBuildBlock>> RoofBlockActorClasses;	
 
+	
 	// Method to generate the 3D grid and spawn block actors
 	UFUNCTION(BlueprintCallable)
 	void GenerateGrid();
 
 	//UFUNCTION(BlueprintCallable)
-	void BuildHouse(int32 X, int32 Y, int32 Z, int32 Height);
+	void BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme Theme);
 
 	UFUNCTION(BlueprintCallable)
-	void BuildHouse(FIntVector position, int32 Height);
-	
+	void BuildHouse(FIntVector position, int32 Height, EHouseTheme Theme);
 
+	UFUNCTION(BlueprintCallable)
+	void BuildPlatform(FVector position, FVector scalingFactor , EMaterialSplat type);
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AGroundPlatform> GroundPlatform;
+	
 private:
 	// Array to hold references to spawned block actors
 	TArray<ABuildBlock*> SpawnedBlocks;

@@ -10,6 +10,7 @@
 #include "ARoofBuildBlock.h"
 #include  "GroundPlatform.h"
 
+
 #include "GridActor.generated.h"
 
 
@@ -28,7 +29,7 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-
+	
 	// Number of rows and columns in the grid
 	UPROPERTY(EditAnywhere)
 	int32 NumRows;

@@ -6,7 +6,10 @@
 #include "GameFramework/Actor.h"
 #include  "Room.h"
 #include  "GridActor.h"
+//#include "LevelObjects/LevelExitTriggerBox.h"
+class ALevelExitTriggerBox;
 #include "RoomBuilder.generated.h"
+
 
 UCLASS()
 class MYPROJECT_API ARoomBuilder : public AActor
@@ -16,6 +19,8 @@ class MYPROJECT_API ARoomBuilder : public AActor
 public:
 	// Sets default values for this actor's properties
 	ARoomBuilder();
+
+	ALevelExitTriggerBox* TriggerBox;
 
 	UPROPERTY(EditAnywhere) 
 	FIntVector Road = FIntVector(0,0,0);

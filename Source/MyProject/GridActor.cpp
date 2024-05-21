@@ -22,7 +22,7 @@ AGridActor::AGridActor()
 void AGridActor::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	// Generate the grid when the game starts
 	//GenerateGrid();
 }

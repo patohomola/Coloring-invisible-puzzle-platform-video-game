@@ -8,7 +8,7 @@
 #include "GroundPlatform.h"
 
 #include "Room.generated.h"
-
+//class AGridActor;
 
 UCLASS()
 class MYPROJECT_API ARoom : public AActor

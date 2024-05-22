@@ -9,7 +9,7 @@
 #include "AFloorBuildBlock.h"
 #include "ARoofBuildBlock.h"
 #include  "GroundPlatform.h"
-
+#include "LevelObjects/Spawner.h"
 
 #include "GridActor.generated.h"
 
@@ -62,6 +62,8 @@ public:
 
 	//UFUNCTION(BlueprintCallable)
 	void BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme Theme);
+	void GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation,
+	                         FVector& Scale);
 
 	UFUNCTION(BlueprintCallable)
 	void BuildHouse(FIntVector position, int32 Height, EHouseTheme Theme);
@@ -69,8 +71,16 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void BuildPlatform(FVector position, FVector scalingFactor , EMaterialSplat type);
 
+	UFUNCTION(BlueprintCallable)
+	void SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor ,int count);
+
+	void SpawnAmmoInSpawnBlock(FVector position, FVector scalingFactor ,int count);
+	
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AGroundPlatform> GroundPlatform;
+
+	UPROPERTY(EditAnywhere)
+	ASpawner* Spawner;
 	
 private:
 	// Array to hold references to spawned block actors

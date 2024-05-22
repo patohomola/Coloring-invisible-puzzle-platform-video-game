@@ -53,6 +53,8 @@ FIntVector ARoom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, in
 		GridActor->BuildHouse(BuildPos,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
 		GridActor->BuildHouse(BuildPos2,FMath::RandRange(3,NumLayers), EHouseTheme::Blank);
 	}
+	GridActor->SpawnAmmoInSpawnBlockInGrid(FVector(StartPos)-FVector(Ofset+0.5f,0+0.5f,0),
+		 FVector(SizeX,SizeY,1),100);
 	GridActor->BuildPlatform(FVector(StartPos)-FVector(Ofset+0.5f,0+0.5f,1),
 		 FVector(SizeX,SizeY,1),
 		EMaterialSplat::Visible);

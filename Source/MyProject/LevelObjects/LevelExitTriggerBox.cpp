@@ -9,7 +9,7 @@ ALevelExitTriggerBox::ALevelExitTriggerBox()
 {
 	// Initialize the box component and set its size
 	TriggerBox = CreateDefaultSubobject<UBoxComponent>(TEXT("TriggerBox"));
-	TriggerBox->InitBoxExtent(FVector(50.f, 50.f, 50.f));
+	TriggerBox->InitBoxExtent(FVector(100.f, 100.f, 100.f));
 	TriggerBox->SetCollisionProfileName("Trigger");
 	RootComponent = TriggerBox;
 

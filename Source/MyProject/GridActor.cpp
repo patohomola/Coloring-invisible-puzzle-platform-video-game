@@ -93,18 +93,26 @@ void AGridActor::BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme
 		}
 	}
 }
+
+void AGridActor::GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation, FVector& Scale)
+{
+	SpawnLocation = GetActorLocation()+FVector(position.X * ElementSpacing,
+	                                           position.Y * ElementSpacing, position.Z*ElementHeightSpacing);
+	Scale = FVector(scalingFactor.X * ElementSpacing,
+	                scalingFactor.Y * ElementSpacing, scalingFactor.Z*ElementHeightSpacing);
+}
+
 void AGridActor::BuildPlatform(FVector position, FVector scalingFactor, EMaterialSplat type)
 {
 	FActorSpawnParameters SpawnParams;
 	SpawnParams.Owner = this;
 	SpawnParams.Instigator = GetInstigator();
 
-	FVector SpawnLocation = GetActorLocation()+FVector(position.X * ElementSpacing,
-		position.Y * ElementSpacing, position.Z*ElementHeightSpacing); // Example location
-	FRotator SpawnRotation = FRotator::ZeroRotator;
-	const FVector Scale=FVector(scalingFactor.X * ElementSpacing/100,
-	                            scalingFactor.Y * ElementSpacing/100, scalingFactor.Z*ElementHeightSpacing/100);
-
+	FVector SpawnLocation;
+	FRotator SpawnRotation= FRotator::ZeroRotator;
+	FVector Scale;
+	GridtoWordCordinate(position, scalingFactor, SpawnLocation, Scale);
+	Scale/=100;
 	// Spawn the platform
 	
 	AGroundPlatform* NewPlatform = GetWorld()->SpawnActor<AGroundPlatform>(GroundPlatform, SpawnLocation, SpawnRotation, SpawnParams);
@@ -114,6 +122,25 @@ void AGridActor::BuildPlatform(FVector position, FVector scalingFactor, EMateria
 		// Initialize platform size (example size)
 		NewPlatform->InitializePlatform(Scale);
 		NewPlatform->setMaterialByType(type);
+	}
+}
+
+void AGridActor::SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor, int count)
+{
+	FVector SpawnLocation;
+	FVector Scale;
+	GridtoWordCordinate(position,scalingFactor,SpawnLocation,Scale);
+	for (int i = 0; i < count; ++i)
+	{
+		Spawner->SpawnObject(SpawnLocation,Scale);
+	}
+}
+
+void AGridActor::SpawnAmmoInSpawnBlock(FVector position, FVector scalingFactor, int count)
+{
+	for (int i = 0; i < count; ++i)
+	{
+		Spawner->SpawnObject(position,scalingFactor);
 	}
 }
 

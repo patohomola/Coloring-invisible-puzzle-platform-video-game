@@ -86,7 +86,7 @@ void AGridActor::BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme
 			ABuildBlock* NewBlockActor = GetWorld()->SpawnActor<ABuildBlock>(BlockActorClass, SpawnLocation, Rotation);
 			if (NewBlockActor)
 			{
-				NewBlockActor->InitializeBlock(EHouseTheme::Blank);
+				NewBlockActor->InitializeBlock(Theme);
 				NewBlockActor->RandomRotateBlock();
 				SpawnedBlocks.Add(NewBlockActor);
 			}
@@ -96,6 +96,7 @@ void AGridActor::BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme
 
 void AGridActor::GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation, FVector& Scale)
 {
+	position-=FVector(0.5f,0.5f,0);
 	SpawnLocation = GetActorLocation()+FVector(position.X * ElementSpacing,
 	                                           position.Y * ElementSpacing, position.Z*ElementHeightSpacing);
 	Scale = FVector(scalingFactor.X * ElementSpacing,
@@ -138,6 +139,7 @@ void AGridActor::SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFa
 
 void AGridActor::SpawnAmmoInSpawnBlock(FVector position, FVector scalingFactor, int count)
 {
+	position-=FVector(0.5f,0.5f,0);
 	for (int i = 0; i < count; ++i)
 	{
 		Spawner->SpawnObject(position,scalingFactor);

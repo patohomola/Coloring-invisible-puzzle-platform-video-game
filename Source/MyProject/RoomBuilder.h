@@ -30,7 +30,8 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<ARoom>> RoomArray;
-
+	UPROPERTY(EditAnywhere)
+	TArray<ARoom*> Rooms;
 	UFUNCTION(BlueprintCallable)
 	void CreateRandomRoom();
 

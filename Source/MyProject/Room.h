@@ -22,9 +22,13 @@ public:
 	ARoom();
 
 	UFUNCTION(Blueprintable)
-	FIntVector GenerateRoom(FIntVector StartPos, int32 SizeX,int32 SizeY,int32 SizeZ);
+	virtual FIntVector GenerateRoom(FIntVector StartPos, int32 SizeX,int32 SizeY,int32 SizeZ);
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	void TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset, FIntVector& exitVector,
+	                EHouseTheme theme);
+	bool Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset, FIntVector& exitVector,
+	               EHouseTheme theme);
 };

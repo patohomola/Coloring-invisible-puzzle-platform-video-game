@@ -8,230 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Spawner.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Spawner.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Corridor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Corridor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3DGridLevelGenerator/CityBlock.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3DGridLevelGenerator/CityBlock.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3DGridLevelGenerator/CityBlock_color_Red.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3DGridLevelGenerator/CityBlock_color_Red.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3DGridLevelGenerator/_cylinder.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3DGridLevelGenerator/_cylinder.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_GroundPlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_GroundPlatform.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Audio/FirstPersonTemplateWeaponFire02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/BaseMaterial.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/FirstPersonProjectileMaterial.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/M_FPGun.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/MaterialLayers/ML_GlossyBlack_Latex_UE4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/MaterialLayers/ML_Plastic_Shiny_Beige.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/MaterialLayers/ML_Screen.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/MaterialLayers/ML_SoftMetal_UE4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/MaterialLayers/T_ML_Aluminum01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/MaterialLayers/T_ML_Aluminum01_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/MaterialLayers/T_ML_FineRubber.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/MaterialLayers/T_ML_Rubber_Blue_01_D.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Materials/MaterialLayers/T_ML_Rubber_Blue_01_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Mesh/FirstPersonProjectileMesh.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Mesh/SK_FPGun.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Mesh/SK_FPGun_Physics.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Mesh/SK_FPGun_PhysicsAsset.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Mesh/SK_FPGun_Skeleton.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Textures/T_FPGun_M.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPWeapon/Textures/T_FPGun_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/BuildedGun.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/STRIBOG_FINAL3_back_together_fbx_ZACHYT.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/STRIBOG_FINAL3_back_together_fbx_hlaven.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/STRIBOG_FINAL3_back_together_fbx_kohutik.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/STRIBOG_FINAL3_back_together_fbx_muska.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/STRIBOG_FINAL3_back_together_fbx_pazba.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/STRIBOG_FINAL3_back_together_fbx_telo_rucka.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/STRIBOG_FINAL3_back_together_fbx_telo_zasobnik.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/STRIBOG_FINAL3_back_together_fbx_zasobnik.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/STRIBOG_FINAL3_back_together_fbx_zaver.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/Texture/DefaultMaterial_Base_Color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/Texture/DefaultMaterial_Height.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/Texture/DefaultMaterial_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/Texture/DefaultMaterial_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/Texture/DefaultMaterial_Roughness.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gun/Texture/M_GunMaterial.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/MF_ProcGrid.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/MI_PrototypeGrid_Gray.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/MI_Solid_Blue.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/M_PrototypeGrid.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/M_Solid.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Meshes/SM_ChamferCube.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Meshes/SM_Cube.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Meshes/SM_Cylinder.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Meshes/SM_QuarterCylinder.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Meshes/SM_Ramp.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Textures/T_GridChecker_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level0.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level0.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/PoschodieA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/PoschodieA.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/PoscodieB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/PoscodieB.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/Prizemie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/Prizemie.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/SM_PoschodieASplat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/SM_PoschodieASplat.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/SM_PoschodieAWCanvas.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/SM_PoschodieAWCanvas.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/Strecha.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/Strecha.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/PrototypeLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/PrototypeLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_MaskedSplats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_MaskedSplats.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_Splats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_Splats.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_MaterialSplatBlend.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_MaterialSplatBlend.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/TrashCan.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/TrashCan.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Particle/SplatSystem.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Particle/SplatSystem.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PlatformBlock.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Bench_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Bench_01_MTL_01_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/MA_Bench.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/MA_Stlp1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/MA_Stlp2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/MA_Trash_Can.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/MA_kable.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/ML_Trash_can.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Street_Lamp.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Street_Lamp_DM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Street_Lamp_Mat.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Street_Lamp_NM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Street_Lamp_SM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Trash_Can.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Trash_Can_diffuse.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/Trash_Can_specular.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/powerpoles_kabel.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/powerpoles_kabel1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/powerpoles_kabel2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/powerpoles_kabel3.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/powerpoles_kabel4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/powerpoles_kabel5.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/powerpoles_stlp1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/powerpoles_stlp2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/stlp1Surface_Color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Street_assets/stlp2Surface_Color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/0/0M/LYKU8MRWM4BO3O1FDZBG2U.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/0/7P/QZX5AESKLO855EVPT5JU20.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/0/NB/NWWEVRQSGT6ARVZ8HQLCM9.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/1/2J/R4MRTH8FEAO7ML1BCJFIZ2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/1/63/MG6FOV6QQX2CAZCGF7O9MM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/1/JT/XIHYQ8ZTVL6F9GCUZX1AQ2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/1/OD/YPSPM063O6XAJVKSDHY2JX.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/1/QL/31H7DJTVWEX04CCMX5U1SN.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/3/0O/4IRR0TBO7VGKMMYSZRQTB1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/3/AI/0XWE3RNM2XQC0ST1KXG02O.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/3/C8/Z38FT77DKZLKDXTQ7PZNM4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/3/CP/XRLOR3HVYVHJA3N9PKGXZH.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/3/YY/ZEL6NJUQJU43LAD9X3NXTT.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/4/G2/DXY1ROMU8NVTUPH999VNGV.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/4/PT/ZXUQMNLL9GZ2UNQ5D0R4A4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/5/80/QQN0UFFAA797E1UT4IMD29.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/5/DI/1JZHHCOBVQ2F5XRUWSES1X.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/6/7Z/7EHFAZ5HVWXAWQ04QO5TH0.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/6/AJ/2XZ3RUK0LFB63FVNQE7P5R.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/6/HC/FI3CQDKJY4J00D2B21FYQZ.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/5X/6EW8RE9VA2GGHRWK614FCI.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/DF/1GID8P6B00XRWKYCXU7HT1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/GI/GZM47KS5FPIQH5TLSYC1ME.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/L5/1ZJ54FMA0DAL3I2Q8RFAIB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/WS/X084A70TPBKFLJDCV2U5PN.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/3M/4ATOKH0ZGPCVBS85MPKAXK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/80/RCXALNT3NG94XMV0V6D4XE.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/CF/ZNIOCRD90Z70MMV9NMW778.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/CW/6HT16P8P5RAXNJG3EVYWE9.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/SZ/D1AHM62WL9TXSNPYQDXQMZ.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/Y4/KY9ZXT77SAVGWBRTNCFCSC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/9/6K/53TOYTOLDEUBMS5SLUFP3V.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/9/JW/IY5R6I5N0YWU9LYWKXFXH9.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/9/OJ/9MHHMH0XHVZ04YDZ7NPC32.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/9/Q2/TOKV0KMMZ7RIQ78R0UEDQL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/9/VP/FVTPO8KZ0WPMCSQLVJE6O9.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/A/2W/U0XT0R08XQA6C15NK8ILFA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/A/91/64ROQWZ22CQVFJMU4XABML.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/A/RJ/Z7CLKO8GGJ7RXH5PUAF4T4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/A/XJ/HL558UUAGCS9HVVOI0S7PX.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/B/51/6JKB4DNGJP09QUHY23FHRV.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/B/DD/654T6CAPVSXAN1LXEX71EI.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/B/EF/G3O7YJR3QU51OHQGRYB635.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/B/YQ/KT6JL4FVCNJJ9VFOCSF32J.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/C/P8/0GJ9TLQE2YKOIFZ6YHG33H.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/E/UE/YUZ9741T50O1SYRX90OB0S.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/F/2F/0SPQG8P507LI9VUAFG20OA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/Collectible/Ammo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/Collectible/Ammo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_Cleaner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_Cleaner.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_DefaultPaintGun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_DefaultPaintGun.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_MultiShoot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_MultiShoot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/AutoGenerateLevels.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/AutoGenerateLevels.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/Block.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/Block.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/invisibleFloor1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/invisibleFloor1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/trigerHallways.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/trigerHallways.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/visibleFloor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/LevelGenerator/Room_Generator/visibleFloor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/HouseS/HouseS_MS_House_1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/HouseS/HouseS_MS_House_2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/HouseS/HouseS_MS_House_3.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/HouseS/M_House.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/HouseS/M_House1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/HouseS/M_House2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/HouseS/T_HouseS.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/HouseS/T_HouseS_1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/HouseS/T_HouseS_2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/House_masked_splats.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/House_masked_splats_invicible.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Mat.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/MyBuildBlock.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/MA_Poschodie_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/MA_Prizemie.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/MA_Strecha.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/MA_poschodie_B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/ML_PoschodedieA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/ML_PoschodieB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/ML_Prizemie.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/ML_Strecha.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/TestMaterial.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodie_Anove_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodie_Bnove_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodiea_Base_Color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodiea_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodiea_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodiea_Roughness.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodieb_2_Base_Color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodieb_2_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodieb_2_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/poschodieb_2_Roughness.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/prizemie_Base_Color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/prizemie_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/prizemie_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/prizemie_Roughness.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/prizemienove_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/strecha_2_Base_Color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/strecha_2_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/strecha_2_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/strecha_2_Roughness.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/New_house/strechanova_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Old_house/Mat.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Old_house/domcek_albedo.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Old_house/domcek_normal.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Old_house/poschodie_A_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Old_house/poschodie_B_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Old_house/prizemie_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Old_house/strecha_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/PoschodieA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/PoscodieB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Prizemie.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/SM_PoschodieASplat.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/SM_PoschodieAWCanvas.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/SM_PoschodieAWCanvas_Inst.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/SM_PoschodieBWCanvas.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/SM_PrizemieWCanvas.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/SM_StrechaCanvas.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/Strecha.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/house_collor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/poschodie_A_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/poschodie_B_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/prizemie_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/house/strecha_fbx.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/material/GridWireFrameMaterial.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/material/GridWireFrameMaterial.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/tiles/Floor_400x400.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/tiles/M_Basic_Floor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/tiles/M_Basic_Wall.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/tiles/Shape_Plane.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/tiles/Wall_400x400.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/tiles/Wall_Door_400x400.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/LevelExitTriggerBox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/LevelExitTriggerBox.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +170,8 @@
       <workItem from="1716240016838" duration="708000" />
       <workItem from="1716241489230" duration="484000" />
       <workItem from="1716288170440" duration="19324000" />
-      <workItem from="1716356697862" duration="8003000" />
+      <workItem from="1716356697862" duration="12717000" />
+      <workItem from="1716462188501" duration="24002000" />
     </task>
     <servers />
   </component>
@@ -392,6 +189,16 @@
           <url>file://$PROJECT_DIR$/Source/MyProject/Rooms/Room.h</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/MyProject/Room.cpp</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

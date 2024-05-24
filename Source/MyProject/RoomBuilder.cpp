@@ -22,10 +22,38 @@ void ARoomBuilder::BeginPlay()
 	CreateRandomRoom();
 }
 
+FRoomStruct SelectRandomRoom(const TArray<FRoomStruct>& RoomArray)
+{
+	// Calculate the total weight
+	int32 TotalWeight = 0;
+	for (const FRoomStruct& Room : RoomArray)
+	{
+		TotalWeight += Room.Weight;
+	}
+
+	// Generate a random number between 0 and TotalWeight
+	int32 RandomValue = FMath::RandRange(0, TotalWeight - 1);
+
+	// Select the struct based on the random value and cumulative weights
+	int32 CumulativeWeight = 0;
+	for (const FRoomStruct& Room : RoomArray)
+	{
+		CumulativeWeight += Room.Weight;
+		if (RandomValue < CumulativeWeight)
+		{
+			return Room;
+		}
+	}
+
+	// Fallback in case of error (should not happen)
+	return RoomArray[0];
+}
+
 void ARoomBuilder::CreateRandomRoom()
 {
-	int32 RandomIndex = FMath::RandRange(0, RoomArray.Num() - 1);
-	ARoom* ChosenRoom =GetWorld()->SpawnActor<ARoom>(RoomArray[RandomIndex],FVector(0,0,0),FRotator::ZeroRotator);
+	
+	FRoomStruct RoomStruct = SelectRandomRoom(RoomStructs);
+	ARoom* ChosenRoom =GetWorld()->SpawnActor<ARoom>(RoomStruct.Room,FVector(0,0,0),FRotator::ZeroRotator);
 	//ARoom* ChosenRoom = RoomArray[RandomIndex];
 
 	// Check if the chosen room is valid
@@ -36,9 +64,9 @@ void ARoomBuilder::CreateRandomRoom()
 		ChosenRoom->GridActor=GridActor;
 		// Call the GenerateRoom method
 		FIntVector StartPos = Road; // Define your StartPos
-		int32 SizeX = FMath::RandRange(8,16); // Define SizeX
-		int32 SizeY = FMath::RandRange(8,16); // Define SizeY
-		int32 SizeZ = FMath::RandRange(8,16); // Define SizeZ
+		int32 SizeX = FMath::RandRange((int)RoomStruct.XRange.GetMin(),(int)RoomStruct.XRange.GetMax()); // Define SizeX
+		int32 SizeY = FMath::RandRange((int)RoomStruct.YRange.GetMin(),(int)RoomStruct.YRange.GetMax()); // Define SizeY
+		int32 SizeZ = FMath::RandRange((int)RoomStruct.ZRange.GetMin(),(int)RoomStruct.ZRange.GetMax()); // Define SizeZ
 		Road= ChosenRoom->GenerateRoom(StartPos, SizeX, SizeY, SizeZ);
 		FVector Location=FVector(Road)*FVector(GridActor->ElementSpacing,GridActor->ElementSpacing,GridActor->ElementHeightSpacing);
 		Location+=FVector(-100.f,-100.f,100.f);
@@ -53,8 +81,6 @@ void ARoomBuilder::CreateRandomRoom()
 		float Thickness = 2.0f; // Thickness of the lines
 
 		DrawDebugSphere(GetWorld(), Location, Radius, 12, Color, bPersistentLines, LifeTime, DepthPriority, Thickness);
-
-		// Do something with the generated room
 	}
 }
 

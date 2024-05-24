@@ -8,9 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +28,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BuildBlock.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/SubLevels/MazeRoom.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -155,7 +160,7 @@
       <workItem from="1716241489230" duration="484000" />
       <workItem from="1716288170440" duration="19324000" />
       <workItem from="1716356697862" duration="12717000" />
-      <workItem from="1716462188501" duration="39298000" />
+      <workItem from="1716462188501" duration="54434000" />
     </task>
     <servers />
   </component>

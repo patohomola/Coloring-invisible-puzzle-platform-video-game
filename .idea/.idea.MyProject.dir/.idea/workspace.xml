@@ -8,26 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Corridor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Corridor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/PoschodieA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/PoschodieA.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/PoscodieB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/PoscodieB.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/Prizemie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/Prizemie.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/SM_PoschodieASplat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/SM_PoschodieASplat.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/SM_PoschodieAWCanvas.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/SM_PoschodieAWCanvas.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/Strecha.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/Strecha.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +155,7 @@
       <workItem from="1716241489230" duration="484000" />
       <workItem from="1716288170440" duration="19324000" />
       <workItem from="1716356697862" duration="12717000" />
-      <workItem from="1716462188501" duration="24002000" />
+      <workItem from="1716462188501" duration="39298000" />
     </task>
     <servers />
   </component>
@@ -194,11 +178,6 @@
           <url>file://$PROJECT_DIR$/Source/MyProject/Room.cpp</url>
           <line>52</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h</url>
-          <line>11</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

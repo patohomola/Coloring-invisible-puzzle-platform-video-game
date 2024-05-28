@@ -53,7 +53,7 @@ bool ARoom::Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ
 	if(SizeX<3||SizeY<3)
 	{
 		return true;
-	}
+	} 
 	if(!GridActor)
 	{
 		return true;

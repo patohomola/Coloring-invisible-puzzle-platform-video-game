@@ -277,6 +277,7 @@ private:
 						if(newX<0||newX==sizeX||newY<0||newY==sizeY)
 						{
 							sum++;
+							continue;
 						}
 						int index2 =array[newX][newY];
 						if(index2==2)
@@ -311,4 +312,4 @@ private:
 		delete[] array;
 	}
 };
-//n*n + (n*n*(random+push))*9
+//n*n + (n*n*(random+push))*

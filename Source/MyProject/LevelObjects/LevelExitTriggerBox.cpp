@@ -37,8 +37,6 @@ void ALevelExitTriggerBox::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, A
 		UE_LOG(LogTemp, Warning, TEXT("Overlap Begin"));
 		isActive=false;
 		RoomBuilder->CreateRandomRoom();
-		
-		// Call a function from another script here
-		// Example: SomeOtherClassInstance->SomeFunction();
+		//Todo: Make time increase based on curent time level
 	}
 }

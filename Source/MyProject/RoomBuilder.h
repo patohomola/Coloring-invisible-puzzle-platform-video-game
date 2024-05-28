@@ -7,6 +7,7 @@
 #include  "Room.h"
 #include  "GridActor.h"
 //#include "LevelObjects/LevelExitTriggerBox.h"
+#include "LevelObjects/TimeAndScoreManager.h"
 class ALevelExitTriggerBox;
 #include "RoomBuilder.generated.h"
 
@@ -57,6 +58,9 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	TArray<FRoomStruct> RoomStructs;
+
+	UPROPERTY(EditAnywhere)
+	ATimeAndScoreManager* TimeScoreManger;
 	
 	UFUNCTION(BlueprintCallable)
 	void CreateRandomRoom();

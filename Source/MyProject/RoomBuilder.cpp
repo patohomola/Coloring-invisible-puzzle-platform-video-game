@@ -80,6 +80,8 @@ void ARoomBuilder::CreateRandomRoom()
 		uint8 DepthPriority = 0; // Default depth priority
 		float Thickness = 2.0f; // Thickness of the lines
 
+		TimeScoreManger->AddTime(RoomStruct.Time);
+
 		DrawDebugSphere(GetWorld(), Location, Radius, 12, Color, bPersistentLines, LifeTime, DepthPriority, Thickness);
 	}
 }

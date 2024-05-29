@@ -3,6 +3,7 @@
 
 #include "LevelExitTriggerBox.h"
 #include "../RoomBuilder.h"
+#include "GameFramework/Character.h"
 
 // Sets default values
 ALevelExitTriggerBox::ALevelExitTriggerBox()
@@ -32,10 +33,12 @@ void ALevelExitTriggerBox::Tick(float DeltaTime)
 void ALevelExitTriggerBox::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Overlap Begin"));
-	if (OtherActor && (OtherActor != this) && OtherComp && isActive)
+	ACharacter* Character = Cast<ACharacter>(OtherActor);
+	if (OtherActor && Character && isActive)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Overlap Begin"));
 		isActive=false;
+		
 		RoomBuilder->CreateRandomRoom();
 		//Todo: Make time increase based on curent time level
 	}

@@ -27,8 +27,8 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	void TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset, FIntVector& exitVector,
+	void TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ,int& Ofset,int Exit, FIntVector& exitVector,
 	                EHouseTheme theme);
-	bool Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset, FIntVector& exitVector,
+	bool Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset,int Exit, FIntVector& exitVector,
 	               EHouseTheme theme);
 };

@@ -20,9 +20,9 @@ void AHighWire::BeginPlay()
 
 FIntVector AHighWire::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ)
 {
-	int32 Ofset;
+	int32 Ofset=0;
 	FIntVector exitVector;
-	TownSquare(StartPos, SizeX, SizeY, SizeZ, Ofset, exitVector, EHouseTheme::Blank);
+	TownSquare(StartPos, SizeX, SizeY, SizeZ, Ofset,0, exitVector, EHouseTheme::Blank);
 	FIntVector delta = exitVector-StartPos;
 	wiggleRoad wR =wiggleRoad(SizeX-1,SizeY-2,Ofset,Ofset+delta.X);
 	TArray<Tile> RoadTiles = wR.callculate();

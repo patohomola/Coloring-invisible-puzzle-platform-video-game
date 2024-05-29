@@ -8,16 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/TimeAndScoreManager.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/TimeAndScoreManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/StartRoom.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/StartRoom.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_DefaultPaintGun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_DefaultPaintGun.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/CustomAlgorithm/wiggleRoad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/AutoLevelGenerating.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/AutoLevelGenerating.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/LevelExitTriggerBox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/LevelExitTriggerBox.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +169,7 @@
       <workItem from="1716733183384" duration="975000" />
       <workItem from="1716800786848" duration="2739000" />
       <workItem from="1716915160155" duration="5440000" />
+      <workItem from="1716974716999" duration="10560000" />
     </task>
     <servers />
   </component>
@@ -187,7 +190,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/MyProject/Room.cpp</url>
-          <line>52</line>
+          <line>54</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

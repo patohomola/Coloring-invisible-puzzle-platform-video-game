@@ -12,9 +12,9 @@ AMazeaRoom::AMazeaRoom()
 }
 FIntVector AMazeaRoom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ)
 {
-	int32 Ofset;
+	int32 Ofset=0;
 	FIntVector exitVector;
-	Structure(StartPos, SizeX, SizeY, SizeZ, Ofset, exitVector, EHouseTheme::Blank);
+	Structure(StartPos, SizeX, SizeY, SizeZ, Ofset,0, exitVector, EHouseTheme::Blank);
 
 	FIntVector delta = exitVector-StartPos;
 	Maze mR =Maze(SizeX-1,SizeY-2,Ofset,Ofset+delta.X);

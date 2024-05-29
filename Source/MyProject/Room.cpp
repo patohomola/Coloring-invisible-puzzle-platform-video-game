@@ -25,10 +25,12 @@ void ARoom::BeginPlay()
 }
 
 
-void ARoom::TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset, FIntVector& exitVector, EHouseTheme theme)
+void ARoom::TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset,int Exit, FIntVector& exitVector, EHouseTheme theme)
 {
-	Ofset = FMath::RandRange(1,SizeX-2);
-	int Exit =FMath::RandRange(1,SizeX-2);
+	if(Ofset==0)
+		Ofset = FMath::RandRange(1,SizeX-2);
+	if(Exit==0)
+		Exit =FMath::RandRange(1,SizeX-2);
 	exitVector = StartPos + FIntVector(Exit-Ofset,SizeY-1,0);
 	for (int32 Row = 0; Row < SizeX; ++Row)
 	{
@@ -48,7 +50,7 @@ void ARoom::TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 Size
 	}
 }
 
-bool ARoom::Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset, FIntVector& exitVector, EHouseTheme theme)
+bool ARoom::Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset,int Exit, FIntVector& exitVector, EHouseTheme theme)
 {
 	if(SizeX<3||SizeY<3)
 	{
@@ -59,7 +61,7 @@ bool ARoom::Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ
 		return true;
 	}
 	
-	TownSquare(StartPos, SizeX, SizeY, SizeZ, Ofset, exitVector, theme);
+	TownSquare(StartPos, SizeX, SizeY, SizeZ, Ofset, Exit, exitVector, theme);
 	GridActor->BuildPlatform(FVector(StartPos)-FVector(Ofset,0,1),
 	                         FVector(SizeX,SizeY,1),
 	                         EMaterialSplat::Visible);
@@ -69,9 +71,9 @@ bool ARoom::Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ
 
 FIntVector ARoom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ)
 {
-	int Ofset;
+	int Ofset=0;
 	FIntVector exitVector;
-	if (Structure(StartPos, SizeX, SizeY, SizeZ, Ofset, exitVector, EHouseTheme::Blank)) return FIntVector::NoneValue;
+	if (Structure(StartPos, SizeX, SizeY, SizeZ, Ofset,0, exitVector, EHouseTheme::Blank)) return FIntVector::NoneValue;
 	GridActor->SpawnAmmoInSpawnBlockInGrid(FVector(StartPos)-FVector(Ofset-1.f,-1.f,0),
 	                                       FVector(SizeX-2.f,SizeY-2.f,1),100);
 	return exitVector;

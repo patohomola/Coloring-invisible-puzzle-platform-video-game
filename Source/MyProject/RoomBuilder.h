@@ -49,7 +49,8 @@ public:
 
 	UPROPERTY(EditAnywhere) 
 	FIntVector Road = FIntVector(0,0,0);
-
+	FIntVector CheckPoint = FIntVector(0,0,0);
+	
 	UPROPERTY(EditAnywhere)
 	AGridActor* GridActor;
 
@@ -60,8 +61,15 @@ public:
 	TArray<FRoomStruct> RoomStructs;
 
 	UPROPERTY(EditAnywhere)
+	TSubclassOf<ARoom>  StartRoom;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<ARoom> Corridor;
+
+	UPROPERTY(EditAnywhere)
 	ATimeAndScoreManager* TimeScoreManger;
-	
+
+	void MoveCheckPointTrigger();
 	UFUNCTION(BlueprintCallable)
 	void CreateRandomRoom();
 

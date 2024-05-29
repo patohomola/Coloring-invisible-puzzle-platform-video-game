@@ -12,9 +12,9 @@ ASlalom::ASlalom()
 
 FIntVector ASlalom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ)
 {
-	int Offset;
+	int Offset=0;
 	FIntVector ExitVector;
-	ARoom::Structure(StartPos,SizeX,SizeY,SizeZ,Offset,ExitVector,EHouseTheme::Normal);
+	ARoom::Structure(StartPos,SizeX,SizeY,SizeZ,Offset,0,ExitVector,EHouseTheme::Normal);
 
 	for (int y = 2; y < SizeY-3; ++y)
 	{

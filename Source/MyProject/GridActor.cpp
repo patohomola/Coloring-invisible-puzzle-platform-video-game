@@ -94,11 +94,16 @@ void AGridActor::BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme
 	}
 }
 
-void AGridActor::GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation, FVector& Scale)
+FVector AGridActor::GridCordToRealCord(FVector position)
 {
 	position-=FVector(0.5f,0.5f,0);
-	SpawnLocation = GetActorLocation()+FVector(position.X * ElementSpacing,
+	return GetActorLocation()+FVector(position.X * ElementSpacing,
 	                                           position.Y * ElementSpacing, position.Z*ElementHeightSpacing);
+}
+
+void AGridActor::GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation, FVector& Scale)
+{
+	SpawnLocation=GridCordToRealCord(position);
 	Scale = FVector(scalingFactor.X * ElementSpacing,
 	                scalingFactor.Y * ElementSpacing, scalingFactor.Z*ElementHeightSpacing);
 }
@@ -125,6 +130,39 @@ void AGridActor::BuildPlatform(FVector position, FVector scalingFactor, EMateria
 		NewPlatform->setMaterialByType(type);
 	}
 }
+
+void AGridActor::BuildMovingPlatform(FVector StartPosition, FVector EndPosition, float Duration, FVector scalingFactor, EMaterialSplat type)
+{
+	BuildMovingPlatform(StartPosition,EndPosition,Duration,scalingFactor,type,0.f,true);
+}
+
+void AGridActor::BuildMovingPlatform(FVector StartPosition, FVector EndPosition, float Duration, FVector scalingFactor, EMaterialSplat type, float Alpha, bool bMovingForward)
+{
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.Owner = this;
+	SpawnParams.Instigator = GetInstigator();
+	
+	StartPosition = GridCordToRealCord(StartPosition);
+	EndPosition=GridCordToRealCord(EndPosition);
+	FRotator SpawnRotation= FRotator::ZeroRotator;
+	FVector Scale=FVector(scalingFactor.X * ElementSpacing,
+					scalingFactor.Y * ElementSpacing, scalingFactor.Z * ElementHeightSpacing);
+	Scale/=100;
+	// Spawn the platform
+	
+	AMovingPlatform* NewPlatform = GetWorld()->SpawnActor<AMovingPlatform>(MovingPlatform, StartPosition, SpawnRotation, SpawnParams);
+
+	if (NewPlatform)
+	{
+		// Initialize platform size (example size)
+		NewPlatform->SetMovingPlatform(StartPosition,EndPosition,Duration);
+		NewPlatform->InitializePlatform(Scale);
+		NewPlatform->setMaterialByType(type);
+	}
+	
+	NewPlatform->SetState(Alpha,bMovingForward);
+}
+
 
 void AGridActor::SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor, int count)
 {

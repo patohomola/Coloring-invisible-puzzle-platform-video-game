@@ -31,7 +31,7 @@ FIntVector AMazeaRoom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 Size
 		FIntVector roadTile=StartPos+FIntVector(xy.X-Ofset,xy.Y+1,0);
 		GridActor->BuildPlatform(FVector(roadTile),
 			FVector(1.f,1.f,1.f)
-			,EMaterialSplat::Visible);
+			,EMaterialSplat::Invisible);
 	}
 	//exitVector+=FIntVector(0,1,0);
 	return exitVector;

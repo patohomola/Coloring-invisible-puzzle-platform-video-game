@@ -9,6 +9,7 @@
 #include "AFloorBuildBlock.h"
 #include "ARoofBuildBlock.h"
 #include  "GroundPlatform.h"
+#include "LevelObjects/MovingPlatform.h"
 #include "LevelObjects/Spawner.h"
 
 #include "GridActor.generated.h"
@@ -62,6 +63,7 @@ public:
 
 	//UFUNCTION(BlueprintCallable)
 	void BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme Theme);
+	FVector GridCordToRealCord(FVector position);
 	void GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation,
 	                         FVector& Scale);
 
@@ -72,12 +74,20 @@ public:
 	void BuildPlatform(FVector position, FVector scalingFactor , EMaterialSplat type);
 
 	UFUNCTION(BlueprintCallable)
+	void BuildMovingPlatform(FVector StartPosition,FVector EndPosition,float Duration, FVector scalingFactor, EMaterialSplat type);
+	
+	void BuildMovingPlatform(FVector StartPosition,FVector EndPosition,float Duration, FVector scalingFactor, EMaterialSplat type,float Alpha,bool bMovingForward);
+
+	UFUNCTION(BlueprintCallable)
 	void SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor ,int count);
 
 	void SpawnAmmoInSpawnBlock(FVector position, FVector scalingFactor ,int count);
 	
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AGroundPlatform> GroundPlatform;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AMovingPlatform> MovingPlatform;
 
 	UPROPERTY(EditAnywhere)
 	ASpawner* Spawner;

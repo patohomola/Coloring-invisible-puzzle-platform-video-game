@@ -8,27 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/MovingPlatform.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/MovingPlatform.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/DynamicSlalom.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/DynamicSlalom.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/FloatingRoad.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/FloatingRoad.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/MovingPlatformRoom.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/MovingPlatformRoom.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/AutoLevelGenerating.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/AutoLevelGenerating.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_MaskedSplats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_MaskedSplats.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_Splats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SM_Splats.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/Layers/Splat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/Layers/Splat.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_MaterialSplatBlend.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_MaterialSplatBlend.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend_Inst.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/HighWire.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +162,7 @@
       <workItem from="1716974716999" duration="10560000" />
       <workItem from="1717082360419" duration="3378000" />
       <workItem from="1717219437459" duration="19073000" />
+      <workItem from="1717412628539" duration="2085000" />
     </task>
     <servers />
   </component>

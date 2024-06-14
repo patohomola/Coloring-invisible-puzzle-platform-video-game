@@ -27,10 +27,15 @@ void ARoom::BeginPlay()
 
 void ARoom::TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset,int Exit, FIntVector& exitVector, EHouseTheme theme)
 {
+	
 	if(Ofset==0)
 		Ofset = FMath::RandRange(1,SizeX-2);
 	if(Exit==0)
 		Exit =FMath::RandRange(1,SizeX-2);
+	
+	GridActor->BuildObstacle(FVector(StartPos)-FVector(Ofset+1,1,3),
+							 FVector(SizeX+2,SizeY+2,1));
+	
 	exitVector = StartPos + FIntVector(Exit-Ofset,SizeY-1,0);
 	for (int32 Row = 0; Row < SizeX; ++Row)
 	{
@@ -48,6 +53,9 @@ void ARoom::TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 Size
 		GridActor->BuildHouse(BuildPos,FMath::RandRange(3,SizeZ), theme);
 		GridActor->BuildHouse(BuildPos2,FMath::RandRange(3,SizeZ), theme);
 	}
+
+	GridActor->SpawnAmmoInSpawnBlockInGrid(FVector(StartPos)-FVector(Ofset-1.f,-1.f,0),
+										   FVector(SizeX-2.f,SizeY-2.f,1),(int)((SizeX*SizeY)*0.8f));
 }
 
 bool ARoom::Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset,int Exit, FIntVector& exitVector, EHouseTheme theme)
@@ -74,8 +82,6 @@ FIntVector ARoom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, in
 	int Ofset=0;
 	FIntVector exitVector;
 	if (Structure(StartPos, SizeX, SizeY, SizeZ, Ofset,0, exitVector, EHouseTheme::Blank)) return FIntVector::NoneValue;
-	GridActor->SpawnAmmoInSpawnBlockInGrid(FVector(StartPos)-FVector(Ofset-1.f,-1.f,0),
-	                                       FVector(SizeX-2.f,SizeY-2.f,1),100);
 	return exitVector;
 }
 

@@ -22,7 +22,7 @@ FIntVector AMovingPlatformRoom::GenerateRoom(FIntVector StartPos, int32 SizeX, i
 {
 	int32 Ofset=0;
 	FIntVector exitVector;
-	TownSquare(StartPos, SizeX, SizeY, SizeZ, Ofset,0, exitVector, EHouseTheme::Blank);
+	TownSquare(StartPos, SizeX, SizeY, SizeZ, Ofset,0, exitVector, EHouseTheme::Normal);
 
 	//startPlatform
 	FVector pos=(FVector)(StartPos+FIntVector(-Ofset,0,-1));
@@ -37,7 +37,7 @@ FIntVector AMovingPlatformRoom::GenerateRoom(FIntVector StartPos, int32 SizeX, i
 	FVector Start = (FVector)(StartPos+FIntVector(-Ofset+x,SizeY-3,-1));
 	FVector End = (FVector)(StartPos+FIntVector(-Ofset+x,2,-1));
 	FVector Size2 =FVector(1,1,1);
-	GridActor->BuildMovingPlatform(Start,End,SizeY*1.f,Size2,EMaterialSplat::Visible);
+	GridActor->BuildMovingPlatform(Start,End,SizeY*1.f,Size2,EMaterialSplat::Invisible);
 	
 	exitVector+=FIntVector(0,1,0);
 	return exitVector;

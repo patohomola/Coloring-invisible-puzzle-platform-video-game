@@ -41,6 +41,6 @@ public:
 
 private:
 	// Box component for the trigger box
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	class UBoxComponent* TriggerBox;
 };

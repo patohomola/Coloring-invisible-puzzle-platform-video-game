@@ -29,4 +29,19 @@ void ATimeAndScoreManager::AddTime_Implementation(int32 InputValue)
 	
 }
 
+void ATimeAndScoreManager::AddLevel_Implementation(int32 InputValue)
+{
+	
+}
+
+void ATimeAndScoreManager::AddScore_Implementation(int32 InputValue)
+{
+	
+}
+void ATimeAndScoreManager::GameOver_Implementation(int32 InputValue)
+{
+	
+}
+
+
 

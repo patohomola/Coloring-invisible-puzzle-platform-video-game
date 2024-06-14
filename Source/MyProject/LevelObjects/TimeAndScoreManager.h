@@ -26,4 +26,16 @@ public:
 	UFUNCTION(BlueprintImplementableEvent,BlueprintCallable)
 	void AddTime(int32 InputValue);
 	virtual void AddTime_Implementation(int32 InputValue);
+
+	UFUNCTION(BlueprintImplementableEvent,BlueprintCallable)
+	void AddLevel(int32 InputValue);
+	virtual void AddLevel_Implementation(int32 InputValue);
+
+	UFUNCTION(BlueprintImplementableEvent,BlueprintCallable)
+	void AddScore(int32 InputValue);
+	virtual void AddScore_Implementation(int32 InputValue);
+
+	UFUNCTION(BlueprintImplementableEvent,BlueprintCallable)
+	void GameOver(int32 InputValue);
+	virtual void GameOver_Implementation(int32 InputValue);
 };

@@ -11,6 +11,7 @@
 #include  "GroundPlatform.h"
 #include "LevelObjects/MovingPlatform.h"
 #include "LevelObjects/Spawner.h"
+#include "LevelObjects/Obstacle.h"
 
 #include "GridActor.generated.h"
 
@@ -74,6 +75,9 @@ public:
 	void BuildPlatform(FVector position, FVector scalingFactor , EMaterialSplat type);
 
 	UFUNCTION(BlueprintCallable)
+	void BuildObstacle(FVector position, FVector scalingFactor);
+
+	UFUNCTION(BlueprintCallable)
 	void BuildMovingPlatform(FVector StartPosition,FVector EndPosition,float Duration, FVector scalingFactor, EMaterialSplat type);
 	
 	void BuildMovingPlatform(FVector StartPosition,FVector EndPosition,float Duration, FVector scalingFactor, EMaterialSplat type,float Alpha,bool bMovingForward);
@@ -88,6 +92,9 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AMovingPlatform> MovingPlatform;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AObstacle> Obstacle;
 
 	UPROPERTY(EditAnywhere)
 	ASpawner* Spawner;

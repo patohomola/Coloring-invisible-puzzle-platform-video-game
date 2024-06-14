@@ -25,11 +25,11 @@ FIntVector ASlalom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, 
 		FVector pos=(FVector)(StartPos+FIntVector(1-Offset,y,0));
 		FVector Size =FVector(x,1,1);
 		if(Size.X>0.1f)
-			GridActor->BuildPlatform(pos,Size,EMaterialSplat::Visible);
+			GridActor->BuildPlatform(pos,Size,EMaterialSplat::Invisible);
 		pos+=FVector(x+1,0,0);
 		Size= FVector(SizeX-x-3,1,1);
 		if(Size.X>0.1f)
-			GridActor->BuildPlatform(pos,Size,EMaterialSplat::Visible);
+			GridActor->BuildPlatform(pos,Size,EMaterialSplat::Invisible);
 		
 	}
 	GridActor->SpawnAmmoInSpawnBlockInGrid(FVector(StartPos)-FVector(Offset-1.f,-1.f,0),

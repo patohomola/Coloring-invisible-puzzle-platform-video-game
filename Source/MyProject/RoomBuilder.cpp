@@ -16,7 +16,7 @@ ARoomBuilder::ARoomBuilder()
 void ARoomBuilder::BeginPlay()
 {
 	Super::BeginPlay();
-	TriggerBox=GetWorld()->SpawnActor<ALevelExitTriggerBox>(FVector::Zero(),FRotator::ZeroRotator);
+	TriggerBox=GetWorld()->SpawnActor<ALevelExitTriggerBox>(CustomTriggerBox,FVector::Zero(),FRotator::ZeroRotator);
 	TriggerBox->RoomBuilder=this;
 	//CreateRandomRoom();
 	//CreateRandomRoom();
@@ -63,10 +63,11 @@ void ARoomBuilder::MoveCheckPointTrigger()
 {
 	FVector Location=FVector(Road)
 		*FVector(GridActor->ElementSpacing,GridActor->ElementSpacing,GridActor->ElementHeightSpacing);
-	Location+=FVector(-100.f,-100.f,100.f);
+	Location+=FVector(0,0,GridActor->ElementHeightSpacing/2);
 	Location+=GridActor->GetTransform().GetLocation();
-		
+	
 	TriggerBox->SetActorLocation(Location);
+	TriggerBox->SetActorScale3D(FVector().One()*7.f);
 	TriggerBox->isActive=true;
 
 

@@ -2,6 +2,8 @@
 
 #include "GridActor.h"
 
+
+
 //#include "Runtime/TraceLog/standalone_epilogue.h"
 
 // Sets default values
@@ -131,6 +133,8 @@ void AGridActor::BuildPlatform(FVector position, FVector scalingFactor, EMateria
 	}
 }
 
+
+
 void AGridActor::BuildMovingPlatform(FVector StartPosition, FVector EndPosition, float Duration, FVector scalingFactor, EMaterialSplat type)
 {
 	BuildMovingPlatform(StartPosition,EndPosition,Duration,scalingFactor,type,0.f,true);
@@ -162,6 +166,30 @@ void AGridActor::BuildMovingPlatform(FVector StartPosition, FVector EndPosition,
 	
 	NewPlatform->SetState(Alpha,bMovingForward);
 }
+
+void AGridActor::BuildObstacle(FVector position, FVector scalingFactor)
+{
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.Owner = this;
+	SpawnParams.Instigator = GetInstigator();
+	
+	position=GridCordToRealCord(position);
+	FRotator SpawnRotation= FRotator::ZeroRotator;
+	FVector Scale=FVector(scalingFactor.X * ElementSpacing,
+					scalingFactor.Y * ElementSpacing, scalingFactor.Z * ElementHeightSpacing);
+	Scale/=100;
+	// Spawn the platform
+	
+	AObstacle* NewPlatform = GetWorld()->SpawnActor<AObstacle>(Obstacle, position, SpawnRotation, SpawnParams);
+	
+	if (NewPlatform)
+	{
+		// Initialize platform size (example size)
+		NewPlatform->InitializePlatform(Scale);
+		NewPlatform->setMaterialByType(EMaterialSplat::Invisible);
+	}
+}
+
 
 
 void AGridActor::SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor, int count)

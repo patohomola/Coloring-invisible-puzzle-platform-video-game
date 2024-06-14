@@ -45,6 +45,8 @@ public:
 	// Sets default values for this actor's properties
 	ARoomBuilder();
 
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<ALevelExitTriggerBox> CustomTriggerBox;
 	ALevelExitTriggerBox* TriggerBox;
 
 	UPROPERTY(EditAnywhere) 

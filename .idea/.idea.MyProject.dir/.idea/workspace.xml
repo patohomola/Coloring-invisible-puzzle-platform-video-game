@@ -8,30 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/GridWireFrameMaterial.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/GridWireFrameMaterial.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/LevelPrototyping/Materials/M_Solid.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/LevelPrototyping/Materials/M_Solid.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/BP_MovingPlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/BP_MovingPlatform.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BPMyObstacle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BPMyObstacle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/UI_Levels/mainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/UI_Levels/mainMenu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/AutoLevelGenerating.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/AutoLevelGenerating.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/BP_TimeAndScoreManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/BP_TimeAndScoreManager.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/Collectible/Ammo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/Collectible/Ammo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/Grenade_launcher.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/Grenade_launcher.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/gameUI/Countdown.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/gameUI/Countdown.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/gameUI/MainMenu/MainMenuWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/gameUI/MainMenu/MainMenuWidget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/gameUI/WB_gameOver.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/gameUI/WB_gameOver.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/LevelExitTriggerBox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/LevelExitTriggerBox.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/LevelExitTriggerBox.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/LevelExitTriggerBox.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/TimeAndScoreManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/TimeAndScoreManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/TimeAndScoreManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/TimeAndScoreManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/Corridor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Corridor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/MovingPlatformRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/MovingPlatformRoom.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +31,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/BlockInfo.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/BlockInfo.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/Box.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/Box.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/BoxAdjacencyMap.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/BoxAdjacencyMap.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BuildBlock.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/MyProject/SubLevels/MazeRoom.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/MyProject.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/MyProject.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -61,7 +61,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Uproject.MyProject.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;AdingArmsAndGun&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -186,7 +186,10 @@
       <workItem from="1717219437459" duration="19073000" />
       <workItem from="1717412628539" duration="3876000" />
       <workItem from="1718299496763" duration="17637000" />
-      <workItem from="1718357229728" duration="3117000" />
+      <workItem from="1718357229728" duration="4274000" />
+      <workItem from="1718458605512" duration="1029000" />
+      <workItem from="1718459689969" duration="4428000" />
+      <workItem from="1718624117762" duration="10307000" />
     </task>
     <servers />
   </component>
@@ -214,6 +217,11 @@
           <url>file://$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.h</url>
           <line>1</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/MyProject/GroundPlatform.cpp</url>
+          <line>3</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

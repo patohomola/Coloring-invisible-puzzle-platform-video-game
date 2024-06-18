@@ -21,6 +21,7 @@ void ARoomBuilder::BeginPlay()
 	//CreateRandomRoom();
 	//CreateRandomRoom();
 
+	CheckPoint =Road;
 	ARoom* NewStartRoom =GetWorld()->SpawnActor<ARoom>(StartRoom,FVector(0,0,0),FRotator::ZeroRotator);
 	NewStartRoom->GridActor=GridActor;
 	Road=NewStartRoom->GenerateRoom(FIntVector(Road),7,7,5);

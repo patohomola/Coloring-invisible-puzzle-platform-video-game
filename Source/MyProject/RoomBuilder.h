@@ -52,6 +52,7 @@ public:
 	UPROPERTY(EditAnywhere) 
 	FIntVector Road = FIntVector(0,0,0);
 	FIntVector CheckPoint = FIntVector(0,0,0);
+	FIntVector PrevCheckPoint = FIntVector(0,0,0);
 	
 	UPROPERTY(EditAnywhere)
 	AGridActor* GridActor;

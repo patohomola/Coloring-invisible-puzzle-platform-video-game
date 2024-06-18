@@ -8,11 +8,13 @@
 // Sets default values
 AObstacle::AObstacle()
 {
+	
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+
 	PrimaryActorTick.bCanEverTick = false;
 	// Bind the hit event
 	firsthit=true;
-	AGroundPlatform::PlatformMesh->OnComponentHit.AddDynamic(this, &AObstacle::OnObstacleHit);
+	PlatformMesh->OnComponentHit.AddDynamic(this, &AObstacle::OnObstacleHit);
 }
 
 // Called when the game starts or when spawned

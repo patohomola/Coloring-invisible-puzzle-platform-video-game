@@ -33,7 +33,7 @@ void ARoom::TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 Size
 	if(Exit==0)
 		Exit =FMath::RandRange(1,SizeX-2);
 	
-	GridActor->BuildObstacle(FVector(StartPos)-FVector(Ofset+1,1,3),
+	GridActor->BuildObstacle(FVector(StartPos)-FVector(Ofset+1,1,1.5f),
 							 FVector(SizeX+2,SizeY+2,1));
 	
 	exitVector = StartPos + FIntVector(Exit-Ofset,SizeY-1,0);

@@ -26,10 +26,8 @@ void AMovingPlatform::SetState(float Alpha, bool bBool)
 	bIsMovingForward=bBool;
 }
 
-// Called every frame
-void AMovingPlatform::Tick(float DeltaTime)
+void AMovingPlatform::BackAndForth(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
 	if (MoveDuration > 0)
 	{
 		ElapsedTime += DeltaTime;
@@ -54,6 +52,26 @@ void AMovingPlatform::Tick(float DeltaTime)
 				bIsMovingForward = true;
 				ElapsedTime = ElapsedTime-MoveDuration;
 			}
+		}
+	}
+}
+
+// Called every frame
+void AMovingPlatform::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	if(PlatformMovement==EPlatformMovement::BackAndForth)
+		BackAndForth(DeltaTime);
+
+	else if(PlatformMovement==EPlatformMovement::ForthTeleport)
+	{
+		ElapsedTime += DeltaTime;
+		float Alpha = ElapsedTime / MoveDuration;
+		SetActorLocation(FMath::Lerp(StartPosition, EndPosition, Alpha));
+
+		if (Alpha >= 1.0f)
+		{
+			ElapsedTime = ElapsedTime-MoveDuration;
 		}
 	}
 }

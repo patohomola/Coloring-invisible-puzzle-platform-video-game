@@ -78,9 +78,10 @@ public:
 	void BuildObstacle(FVector position, FVector scalingFactor);
 
 	UFUNCTION(BlueprintCallable)
-	void BuildMovingPlatform(FVector StartPosition,FVector EndPosition,float Duration, FVector scalingFactor, EMaterialSplat type);
+	AMovingPlatform* BuildMovingPlatform(FVector StartPosition, FVector EndPosition, float Duration,
+	                                     FVector scalingFactor, EMaterialSplat type);
 	
-	void BuildMovingPlatform(FVector StartPosition,FVector EndPosition,float Duration, FVector scalingFactor, EMaterialSplat type,float Alpha,bool bMovingForward);
+	AMovingPlatform* BuildMovingPlatform(FVector StartPosition,FVector EndPosition,float Duration, FVector scalingFactor, EMaterialSplat type,float Alpha,bool bMovingForward);
 
 	UFUNCTION(BlueprintCallable)
 	void SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor ,int count);

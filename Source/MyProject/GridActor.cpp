@@ -134,13 +134,13 @@ void AGridActor::BuildPlatform(FVector position, FVector scalingFactor, EMateria
 }
 
 
-
-void AGridActor::BuildMovingPlatform(FVector StartPosition, FVector EndPosition, float Duration, FVector scalingFactor, EMaterialSplat type)
+AMovingPlatform* AGridActor::BuildMovingPlatform(FVector StartPosition, FVector EndPosition, float Duration,
+                                                 FVector scalingFactor, EMaterialSplat type)
 {
-	BuildMovingPlatform(StartPosition,EndPosition,Duration,scalingFactor,type,0.f,true);
+	return BuildMovingPlatform(StartPosition,EndPosition,Duration,scalingFactor,type,0.f,true);
 }
 
-void AGridActor::BuildMovingPlatform(FVector StartPosition, FVector EndPosition, float Duration, FVector scalingFactor, EMaterialSplat type, float Alpha, bool bMovingForward)
+AMovingPlatform* AGridActor::BuildMovingPlatform(FVector StartPosition, FVector EndPosition, float Duration, FVector scalingFactor, EMaterialSplat type, float Alpha, bool bMovingForward)
 {
 	FActorSpawnParameters SpawnParams;
 	SpawnParams.Owner = this;
@@ -165,6 +165,7 @@ void AGridActor::BuildMovingPlatform(FVector StartPosition, FVector EndPosition,
 	}
 	
 	NewPlatform->SetState(Alpha,bMovingForward);
+	return NewPlatform;
 }
 
 void AGridActor::BuildObstacle(FVector position, FVector scalingFactor)

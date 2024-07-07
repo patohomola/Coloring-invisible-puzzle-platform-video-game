@@ -55,7 +55,7 @@ void ARoom::TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 Size
 	}
 
 	GridActor->SpawnAmmoInSpawnBlockInGrid(FVector(StartPos)-FVector(Ofset-1.f,-1.f,0),
-										   FVector(SizeX-2.f,SizeY-2.f,1),(int)((SizeX*SizeY)*0.8f));
+										   FVector(SizeX-2.f,SizeY-2.f,1),(int)((SizeX*SizeY)*0.2f));
 }
 
 bool ARoom::Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset,int Exit, FIntVector& exitVector, EHouseTheme theme)

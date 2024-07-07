@@ -41,8 +41,8 @@ FIntVector ADynamicSlalom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 
 		GridActor->BuildMovingPlatform(pos-FVector(SizeX-3,0.f,0.f),pos,SizeX*(1),Size,EMaterialSplat::Invisible,RandomFloat,bRandomBool);
 		
 	}
-	GridActor->SpawnAmmoInSpawnBlockInGrid(FVector(StartPos)-FVector(Offset-1.f,-1.f,0),
-										   FVector(SizeX-2.f,SizeY-2.f,1),100);
+	/*GridActor->SpawnAmmoInSpawnBlockInGrid(FVector(StartPos)-FVector(Offset-1.f,-1.f,0),
+										   FVector(SizeX-2.f,SizeY-2.f,1),100);*/
 	return ExitVector;
 }
 

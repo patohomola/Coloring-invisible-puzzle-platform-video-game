@@ -6,6 +6,14 @@
 #include "MyProject/GroundPlatform.h"
 #include "MovingPlatform.generated.h"
 
+
+UENUM(BlueprintType)
+enum class EPlatformMovement : uint8
+{
+	BackAndForth,
+	ForthTeleport
+};
+
 UCLASS()
 class MYPROJECT_API AMovingPlatform : public AGroundPlatform
 {
@@ -26,15 +34,27 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float MoveDuration;
 
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	EPlatformMovement PlatformMovement;
+
+	void SetPlatformMovement(EPlatformMovement newPlatformMovement)
+	{
+		this->PlatformMovement = newPlatformMovement;
+	}
+
 	void SetMovingPlatform(FVector newStartPosition,FVector newEndPosition, float newMoveDuration)
 	{
+		PlatformMovement=EPlatformMovement::BackAndForth;
 		StartPosition=newStartPosition;
 		EndPosition=newEndPosition;
 		MoveDuration=newMoveDuration;
 	}
 
 	void SetState(float Alpha,bool bBool);
+	void BackAndForth(float DeltaTime);
+
 private:
+	
 	// Track the time
 	float ElapsedTime;
 	bool bIsMovingForward;

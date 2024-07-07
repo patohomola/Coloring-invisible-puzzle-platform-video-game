@@ -8,19 +8,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/ObstacleCurse.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/ObstacleCurse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/SlalomPushingBack.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/SlalomPushingBack.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/GridWireFrameMaterial.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/GridWireFrameMaterial.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/LevelPrototyping/Materials/M_Solid.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/LevelPrototyping/Materials/M_Solid.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/BP_MovingPlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/BP_MovingPlatform.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BPMyObstacle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BPMyObstacle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/FPWeapon/Materials/BaseMaterial.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FPWeapon/Materials/BaseMaterial.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/UI_Levels/mainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/UI_Levels/mainMenu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/AutoLevelGenerating.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/AutoLevelGenerating.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PP_Outline.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PostProcess/PP_CelShading.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PostProcess/PP_CelShading.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/BP_TimeAndScoreManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/BP_TimeAndScoreManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/GameCharacter/BP_controller.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GameCharacter/BP_controller.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/GameCharacter/PlayerPainter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GameCharacter/PlayerPainter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_BaseGun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_BaseGun.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/gameUI/ColorScreenSplat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/gameUI/MainMenu/MainMenuWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/gameUI/MainMenu/MainMenuWidget.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/gameUI/WB_gameOver.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/gameUI/WB_gameOver.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/input/IM_Main.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/input/IM_Main.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/MovingPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/MovingPlatform.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/MovingPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/MovingPlatform.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/DynamicSlalom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/DynamicSlalom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/Slalom.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BlockInfo.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/MyProject/BlockInfo.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/BlockInfo.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/Box.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/Box.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BoxAdjacencyMap.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +80,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -190,6 +203,9 @@
       <workItem from="1718458605512" duration="1029000" />
       <workItem from="1718459689969" duration="4428000" />
       <workItem from="1718624117762" duration="10307000" />
+      <workItem from="1719596965024" duration="3926000" />
+      <workItem from="1719775392688" duration="3036000" />
+      <workItem from="1720351221898" duration="13496000" />
     </task>
     <servers />
   </component>

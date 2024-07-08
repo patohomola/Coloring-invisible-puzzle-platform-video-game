@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Components/StaticMeshComponent.h"
+#include "Components/BoxComponent.h"
 #include "GroundPlatform.generated.h"
 
 
@@ -29,10 +30,13 @@ public:
 	UMaterialInterface* Visible;
 	UPROPERTY(EditAnywhere, Category = "Materials")
 	UMaterialInterface* Invisible;
+	//UBoxComponent* BoxCollider;
 
 	void SetVisible();
 	void SetInvisible();
 	void setMaterialByType(EMaterialSplat TypeOfMaterial);
+
+	
 protected:
 
 

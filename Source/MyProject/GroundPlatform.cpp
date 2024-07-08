@@ -7,9 +7,12 @@
 AGroundPlatform::AGroundPlatform()
 {
 	PlatformMesh=CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlatformMesh"));
-	//RootComponent = PlatformMesh;
-	PlatformMesh->AttachToComponent(RootComponent,FAttachmentTransformRules::KeepRelativeTransform);
+	//BoxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("Box Collider"));
+	
+	//RootComponent = BoxCollider;
 
+	PlatformMesh->AttachToComponent(RootComponent,FAttachmentTransformRules::KeepRelativeTransform);
+	
 	PlatformMesh->SetMobility(EComponentMobility::Movable);
 
 }

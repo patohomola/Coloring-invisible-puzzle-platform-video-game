@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "MyProject/GroundPlatform.h"
+#include "GameFramework/MovementComponent.h"
 #include "MovingPlatform.generated.h"
 
 
@@ -20,8 +21,10 @@ class MYPROJECT_API AMovingPlatform : public AGroundPlatform
 	GENERATED_BODY()
 
 public:
+	
 	// Sets default values for this actor's properties
 	AMovingPlatform();
+	
 
 	// The start and end positions
 	UPROPERTY(EditAnywhere, Category = "Movement")
@@ -36,6 +39,7 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	EPlatformMovement PlatformMovement;
+	//UBoxComponent* BoxCollider;
 
 	void SetPlatformMovement(EPlatformMovement newPlatformMovement)
 	{

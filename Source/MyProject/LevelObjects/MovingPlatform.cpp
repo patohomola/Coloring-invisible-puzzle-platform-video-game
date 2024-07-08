@@ -8,15 +8,39 @@
 AMovingPlatform::AMovingPlatform()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	//BoxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("Box Collider"));
+	
+	//RootComponent = BoxCollider;
 	PrimaryActorTick.bCanEverTick = true;
 	ElapsedTime = 0.0f;
 	bIsMovingForward = true;
+}
+
+void AMovingPlatform::UpdatePlatformPosition(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	if(PlatformMovement==EPlatformMovement::BackAndForth)
+		BackAndForth(DeltaTime);
+
+	else if(PlatformMovement==EPlatformMovement::ForthTeleport)
+	{
+		ElapsedTime += DeltaTime;
+		float Alpha = ElapsedTime / MoveDuration;
+		SetActorLocation(FMath::Lerp(StartPosition, EndPosition, Alpha));
+
+		if (Alpha >= 1.0f)
+		{
+			ElapsedTime = ElapsedTime-MoveDuration;
+		}
+	}
 }
 
 // Called when the game starts or when spawned
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
+	PrimaryActorTick.bCanEverTick=true;
+	
 	
 }
 
@@ -59,20 +83,6 @@ void AMovingPlatform::BackAndForth(float DeltaTime)
 // Called every frame
 void AMovingPlatform::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-	if(PlatformMovement==EPlatformMovement::BackAndForth)
-		BackAndForth(DeltaTime);
-
-	else if(PlatformMovement==EPlatformMovement::ForthTeleport)
-	{
-		ElapsedTime += DeltaTime;
-		float Alpha = ElapsedTime / MoveDuration;
-		SetActorLocation(FMath::Lerp(StartPosition, EndPosition, Alpha));
-
-		if (Alpha >= 1.0f)
-		{
-			ElapsedTime = ElapsedTime-MoveDuration;
-		}
-	}
+	UpdatePlatformPosition(DeltaTime);
 }
 

@@ -25,8 +25,12 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
+	void MakeSlowlyEleveated(USplineComponent* SplineComponent);
+	void CalculateTangents(USplineComponent* SplineComponent);
 	void GenerateRandomTangle(int32 NumberOfPoints, float minDist, float Start, float Exit);
 	FVector GetRandomPointWithinBounds(float AreaSizeX, float AreaSizeY) const;
+	void SubdivideSpline(USplineComponent* SplineComponent);
+	float CalculateShortestDistanceBetweenSplineSegments(int32 SegmentIndex1, int32 SegmentIndex2, USplineComponent* SplineComponent) const;
 
 public:	
 	// Sets default values for this actor's properties
@@ -36,6 +40,7 @@ public:
 
 private:
 	FVector2f Area;
+
 
 public:
 	void SetSplineActor(ASplineActor* newSplineActor)
@@ -47,6 +52,7 @@ public:
 	{
 		this->Area = newArea;
 	}
-
+	UPROPERTY(EditAnywhere)
+	float Diameter=500.f;
 	// Called every frame
 };

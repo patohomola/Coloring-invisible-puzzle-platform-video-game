@@ -34,7 +34,7 @@ FIntVector ASplineToHaven::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 
 	
 		
 	FVector pos = GridActor->GridCordToRealCord((FVector)StartPos - FVector(Offset - ((float)SizeX/2),-((float)SizeY/2),-0.5));
-	ASplineActor* newSplineActor = GetWorld()->SpawnActor<ASplineActor>(SplineActor,pos,FRotator::ZeroRotator,SpawnParams);
+	ASplineActor* newSplineActor = GetWorld()->SpawnActor<ASplineActor>(SplineActor,pos+FVector(0,0,30),FRotator::ZeroRotator,SpawnParams);
 	
 	SplineGenerator->SetSplineActor(newSplineActor);
 	SplineGenerator->SetArea(FVector2f(Area.X,Area.Y));

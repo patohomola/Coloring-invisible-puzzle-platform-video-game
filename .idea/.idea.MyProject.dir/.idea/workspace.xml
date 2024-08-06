@@ -8,12 +8,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/Interfaces/Damagable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/Interfaces/IDamagable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/Level/JumpingUpPlatform.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/Level/JumpingUpPlatform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/PlatformSplineActor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/PlatformSplineActor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/WaterCaustic.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/WaterCaustic.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/AutoLevelGenerating.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/AutoLevelGenerating.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MySplineToHaven.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MySplineToHaven.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MySplineActorBpNonTransparent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MySplineActorBpNonTransparent.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/Textures/Transparent_T.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/Textures/Transparent_T.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/Colloring.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/Colloring.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/SplatBrush/Splat_Paint_Brush.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/SplatBrush/Splat_Paint_Brush.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/BP_TimeAndScoreManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/BP_TimeAndScoreManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_Cleaner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_Cleaner.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/gameUI/Countdown.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/gameUI/Countdown.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/gameUI/TexturesAndMaterial/ColorScreenSplat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/gameUI/TexturesAndMaterial/ColorScreenSplat.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/gameUI/TexturesAndMaterial/RadialProgressBar_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/gameUI/TexturesAndMaterial/RadialProgressBar_Inst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/AGroundFloorBuildBlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/AGroundFloorBuildBlock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/Level/SplineToHaven.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/Level/SplineToHaven.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/SplineGenerator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/SplineGenerator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/SplineGenerator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SplineDirectory/SplineGenerator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/SlalomPushingBack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/SlalomPushingBack.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +44,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BlockInfo.cpp" root0="SKIP_HIGHLIGHTING" />
@@ -52,29 +76,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Uproject.MyProject.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Uproject.MyProject.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\pa3ck\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\pa3ck\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\pa3ck\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\pa3ck\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\pa3ck\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\pa3ck\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CidrLocalAttachDebugger.recentlyUsed">
       <recent name="com.jetbrains.rider.cpp.debugger.RiderCppLLDBDriverConfiguration" />
@@ -192,6 +216,12 @@
       <workItem from="1720351221898" duration="61908000" />
       <workItem from="1720784777636" duration="15965000" />
       <workItem from="1720946438117" duration="40245000" />
+      <workItem from="1721294451437" duration="2494000" />
+      <workItem from="1721545929301" duration="4164000" />
+      <workItem from="1721744787214" duration="10337000" />
+      <workItem from="1721931401507" duration="21668000" />
+      <workItem from="1722423714958" duration="6654000" />
+      <workItem from="1722894780782" duration="3304000" />
     </task>
     <servers />
   </component>
@@ -232,13 +262,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/MyProject/SplineDirectory/SplineGenerator.cpp</url>
-          <line>361</line>
-          <option name="timeStamp" value="8" />
+          <line>312</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/MyProject/SplineDirectory/SplineGenerator.cpp</url>
-          <line>264</line>
-          <option name="timeStamp" value="9" />
+          <line>177</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/MyProject/SplineDirectory/Level/JumpingUpPlatform.cpp</url>
+          <line>60</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

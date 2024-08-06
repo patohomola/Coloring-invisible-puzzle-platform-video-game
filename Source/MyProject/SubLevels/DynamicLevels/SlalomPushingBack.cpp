@@ -37,7 +37,7 @@ FIntVector ASlalomPushingBack::GenerateRoom(FIntVector StartPos, int32 SizeX, in
 		FVector BeginPos=EndPos+(FVector)FIntVector(0,SizeY-5,0);
 		FVector Size =FVector(x,0.1,1);
 		float alpha = ((float)(y-2))/((float)(SizeY-5));
-		float speed = 2.f;
+		float speed = 3.f;
 		if(Size.X>0.1f)
 		{
 			AMovingPlatform* NewPlatform  = GridActor->BuildMovingPlatform(BeginPos,EndPos,(SizeY-5)*(speed),

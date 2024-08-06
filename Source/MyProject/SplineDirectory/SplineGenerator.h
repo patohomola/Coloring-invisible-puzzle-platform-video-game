@@ -25,8 +25,12 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
-	void MakeSlowlyEleveated(USplineComponent* SplineComponent);
+	void MakeSlowlyEleveated(USplineComponent* SplineComponent, float koefiecient);
+	void CalculateTangent(USplineComponent* SplineComponent, int32 i);
+	void calculateStartTangent(USplineComponent* SplineComponent);
+	void calculateEndTangent(USplineComponent* SplineComponent);
 	void CalculateTangents(USplineComponent* SplineComponent);
+	void GenerateSlowlyElevatedLine(float Size, float koeficient);
 	void GenerateRandomTangle(int32 NumberOfPoints, float minDist, float Start, float Exit);
 	FVector GetRandomPointWithinBounds(float AreaSizeX, float AreaSizeY) const;
 	void SubdivideSpline(USplineComponent* SplineComponent);
@@ -36,14 +40,14 @@ public:
 	// Sets default values for this actor's properties
 
 	UPROPERTY(EditAnywhere)
-	ASplineActor* SplineActor;
+	USplineComponent* SplineActor;
 
 private:
 	FVector2f Area;
 
 
 public:
-	void SetSplineActor(ASplineActor* newSplineActor)
+	void SetSplineActor(USplineComponent* newSplineActor)
 	{
 		this->SplineActor = newSplineActor;
 	}

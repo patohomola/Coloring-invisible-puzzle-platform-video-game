@@ -99,8 +99,21 @@ void AGridActor::BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme
 FVector AGridActor::GridCordToRealCord(FVector position)
 {
 	position-=FVector(0.5f,0.5f,0);
-	return GetActorLocation()+FVector(position.X * ElementSpacing,
-	                                           position.Y * ElementSpacing, position.Z*ElementHeightSpacing);
+	return GetActorLocation()+
+		FVector(position.X * ElementSpacing,
+				position.Y * ElementSpacing,
+				position.Z*ElementHeightSpacing);
+}
+
+FVector AGridActor::RealCordToGridCord(FVector realPosition)
+{
+	FVector actorLocation = GetActorLocation();
+	realPosition -= actorLocation; // Subtract the actor's location
+	FVector position(realPosition.X / ElementSpacing,
+					 realPosition.Y / ElementSpacing,
+					 realPosition.Z / ElementHeightSpacing);
+	position += FVector(0.5f, 0.5f, 0); // Shift back
+	return position;
 }
 
 void AGridActor::GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation, FVector& Scale)

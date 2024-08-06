@@ -22,15 +22,17 @@ template <typename InElementType>
 struct TPriorityQueueNode {
 	InElementType Element;
 	float Koeficient;
+	float EndGoal;
 
 	TPriorityQueueNode()
 	{
 	}
 
-	TPriorityQueueNode(InElementType InElement, float InKoeficient)
+	TPriorityQueueNode(InElementType InElement, float InKoeficient, float InEndGoal)
 	{
 		Element = InElement;
 		Koeficient = InKoeficient;
+		EndGoal = InEndGoal;
 	}
 	
 	bool operator<(const TPriorityQueueNode<InElementType> Other) const
@@ -67,9 +69,9 @@ public:
 		return Node;
 	}
 
-	void Push(InElementType Element, float Koeficient)
+	void Push(InElementType Element, float Koeficient, float EndGoal)
 	{
-		Array.HeapPush(TPriorityQueueNode<InElementType>(Element, Koeficient));
+		Array.HeapPush(TPriorityQueueNode<InElementType>(Element, Koeficient, EndGoal));
 	}
 
 	bool IsEmpty() const
@@ -119,18 +121,58 @@ void USplineGenerator::TickComponent(float DeltaTime, ELevelTick TickType,
 }
 
 
-void USplineGenerator::MakeSlowlyEleveated(USplineComponent* SplineComponent)
+void USplineGenerator::MakeSlowlyEleveated(USplineComponent* SplineComponent,float koefiecient)
 {
 	// Adjust Z coordinate proportionally based on distance along the spline
 	for (int32 i = 0; i < SplineComponent->GetNumberOfSplinePoints(); ++i)
 	{
 		float Distance = SplineComponent->GetDistanceAlongSplineAtSplinePoint(i);
 		FVector Point = SplineComponent->GetLocationAtSplinePoint(i, ESplineCoordinateSpace::Local);
-		Point.Z = Distance *0.15f;  // Adjust Z proportionally
+		Point.Z = Distance *koefiecient;  // Adjust Z proportionally
 		SplineComponent->SetLocationAtSplinePoint(i, Point, ESplineCoordinateSpace::Local, false);
 	}
-
+ 
 	SplineComponent->UpdateSpline();
+}
+
+void USplineGenerator::CalculateTangent(USplineComponent* SplineComponent, int32 i)
+{
+	FVector PreviousPoint = SplineComponent->GetLocationAtSplinePoint(i-1,ESplineCoordinateSpace::Local);
+	FVector CurrentPoint = SplineComponent->GetLocationAtSplinePoint(i,ESplineCoordinateSpace::Local);
+	FVector NextPoint = SplineComponent->GetLocationAtSplinePoint(i+1,ESplineCoordinateSpace::Local);
+
+	FVector Dir = FVector(0,0,0);
+
+	Dir += (PreviousPoint-CurrentPoint).GetSafeNormal();
+	Dir -=  (NextPoint-CurrentPoint).GetSafeNormal();
+	Dir = Dir.GetSafeNormal();
+	// Calculate the distance for the control points
+	float DistanceToPrev = FVector::Dist(PreviousPoint, CurrentPoint);
+	float DistanceToNext = FVector::Dist(CurrentPoint, NextPoint);
+
+	FVector ArriveTangent = Dir * DistanceToPrev * -1.f;
+	FVector LeaveTangent = Dir * DistanceToNext * -1.f;
+
+		
+
+	SplineComponent->SetTangentsAtSplinePoint(i, ArriveTangent, LeaveTangent, ESplineCoordinateSpace::Local);
+}
+
+void USplineGenerator::calculateStartTangent(USplineComponent* SplineComponent)
+{
+	FVector FirstPoint = SplineComponent->GetLocationAtSplinePoint(0, ESplineCoordinateSpace::Local);
+	FVector SecondPoint = SplineComponent->GetLocationAtSplinePoint(1, ESplineCoordinateSpace::Local);
+	FVector FirstTangent = (SecondPoint - FirstPoint) / 2.0f;
+	SplineComponent->SetTangentsAtSplinePoint(0, FirstTangent, FirstTangent, ESplineCoordinateSpace::Local);
+}
+
+void USplineGenerator::calculateEndTangent(USplineComponent* SplineComponent)
+{
+	int32 LastIndex = SplineComponent->GetNumberOfSplinePoints() - 1;
+	FVector LastPoint = SplineComponent->GetLocationAtSplinePoint(LastIndex, ESplineCoordinateSpace::Local);
+	FVector SecondLastPoint = SplineComponent->GetLocationAtSplinePoint(LastIndex - 1, ESplineCoordinateSpace::Local);
+	FVector LastTangent = (LastPoint - SecondLastPoint) / 2.0f;
+	SplineComponent->SetTangentsAtSplinePoint(LastIndex, LastTangent, LastTangent, ESplineCoordinateSpace::Local);
 }
 
 void USplineGenerator::CalculateTangents(USplineComponent* SplineComponent)
@@ -138,25 +180,7 @@ void USplineGenerator::CalculateTangents(USplineComponent* SplineComponent)
 	// Calculate tangents
 	for (int32 i = 1; i < SplineComponent->GetNumberOfSplinePoints() - 1; ++i)
 	{
-		FVector PreviousPoint = SplineComponent->GetLocationAtSplinePoint(i-1,ESplineCoordinateSpace::Local);
-		FVector CurrentPoint = SplineComponent->GetLocationAtSplinePoint(i,ESplineCoordinateSpace::Local);
-		FVector NextPoint = SplineComponent->GetLocationAtSplinePoint(i+1,ESplineCoordinateSpace::Local);
-
-		FVector Dir = FVector(0,0,0);
-
-		Dir += (PreviousPoint-CurrentPoint).GetSafeNormal();
-		Dir -=  (NextPoint-CurrentPoint).GetSafeNormal();
-		Dir = Dir.GetSafeNormal();
-		// Calculate the distance for the control points
-		float DistanceToPrev = FVector::Dist(PreviousPoint, CurrentPoint);
-		float DistanceToNext = FVector::Dist(CurrentPoint, NextPoint);
-
-		FVector ArriveTangent = Dir * DistanceToPrev * -1.f;
-		FVector LeaveTangent = Dir * DistanceToNext * -1.f;
-
-		
-
-		SplineComponent->SetTangentsAtSplinePoint(i, ArriveTangent, LeaveTangent, ESplineCoordinateSpace::Local);
+		CalculateTangent(SplineComponent, i);
 	}
 
 	
@@ -166,24 +190,47 @@ void USplineGenerator::CalculateTangents(USplineComponent* SplineComponent)
 	// Set tangents for the first and last points
 	if (SplineComponent->GetNumberOfSplinePoints() > 1)
 	{
-		FVector FirstPoint = SplineComponent->GetLocationAtSplinePoint(0, ESplineCoordinateSpace::Local);
-		FVector SecondPoint = SplineComponent->GetLocationAtSplinePoint(1, ESplineCoordinateSpace::Local);
-		FVector FirstTangent = (SecondPoint - FirstPoint) / 2.0f;
-		SplineComponent->SetTangentsAtSplinePoint(0, FirstTangent, FirstTangent, ESplineCoordinateSpace::Local);
+		calculateStartTangent(SplineComponent);
 
-		int32 LastIndex = SplineComponent->GetNumberOfSplinePoints() - 1;
-		FVector LastPoint = SplineComponent->GetLocationAtSplinePoint(LastIndex, ESplineCoordinateSpace::Local);
-		FVector SecondLastPoint = SplineComponent->GetLocationAtSplinePoint(LastIndex - 1, ESplineCoordinateSpace::Local);
-		FVector LastTangent = (LastPoint - SecondLastPoint) / 2.0f;
-		SplineComponent->SetTangentsAtSplinePoint(LastIndex, LastTangent, LastTangent, ESplineCoordinateSpace::Local);
+		calculateEndTangent(SplineComponent);
 	}
 
 	SplineComponent->UpdateSpline();
 }
+void USplineGenerator::GenerateSlowlyElevatedLine(float Size,float koeficient)
+{
+	USplineComponent* SplineComponent = SplineActor;
+	SplineComponent->ClearSplinePoints(false);
+
+	TArray<FVector> Points;
+	int count=1;
+
+	FVector newPoint =GetRandomPointWithinBounds(Area.X, Area.Y);
+	SplineComponent->AddSplinePoint(newPoint, ESplineCoordinateSpace::Local, false);
+
+	newPoint =GetRandomPointWithinBounds(Area.X, Area.Y);
+	SplineComponent->AddSplinePoint(newPoint, ESplineCoordinateSpace::Local, false);
+
+	calculateStartTangent(SplineComponent);
+	float dist=0.f;
+	
+	while (Size>dist)
+	{
+		SplineComponent->AddSplinePoint(newPoint, ESplineCoordinateSpace::Local, false);
+		CalculateTangent(SplineComponent, 1);
+		newPoint =GetRandomPointWithinBounds(Area.X, Area.Y);
+		count++;
+		SplineComponent->UpdateSpline();
+
+		dist = SplineComponent->GetSplineLength();
+	}
+	calculateEndTangent(SplineComponent);
+	MakeSlowlyEleveated(SplineComponent, koeficient);
+}
 
 void USplineGenerator::GenerateRandomTangle( int32 NumberOfPoints,float minDist, float Start, float Exit)
 {
-	USplineComponent* SplineComponent = SplineActor->GetSplineComponent();
+	USplineComponent* SplineComponent = SplineActor;
 	SplineComponent->ClearSplinePoints(false);
 
 	TArray<FVector> Points;
@@ -191,12 +238,12 @@ void USplineGenerator::GenerateRandomTangle( int32 NumberOfPoints,float minDist,
 	
 	// Generate random points within bounds
 	FVector lastpoint= FVector(Start,-Area.Y,0.f);
-	Points.Add(lastpoint - FVector(0,10,0));
+	Points.Add(lastpoint - FVector(0,40,0));
 	FVector newPoint = lastpoint;
 	for (int32 i = 0; i < NumberOfPoints; ++i)
 	{
 		Points.Add(newPoint);
-		while (FVector::Dist(lastpoint,newPoint)<minDist)
+		while (FVector::Dist(lastpoint,newPoint)<minDist) 
 		{
 			newPoint =GetRandomPointWithinBounds(Area.X, Area.Y);
 	 	}
@@ -251,9 +298,10 @@ void USplineGenerator::GenerateRandomTangle( int32 NumberOfPoints,float minDist,
 
 	float value = 0.f;
 	float previousDist = 0.f;
+	float EndGoal=0.f;
 	TPriorityQueue<int32> Frontier;
 	
-	Frontier.Push(NumPoints,value);
+	Frontier.Push(NumPoints,value,0.f);
 	int32 intGetIndex = 0;
 
 	UE_LOG(LogTemp, Warning, TEXT("INtersections = %d"), IntersectionIndicesDown.Num());
@@ -264,7 +312,32 @@ void USplineGenerator::GenerateRandomTangle( int32 NumberOfPoints,float minDist,
 	for (int32 i = 0; i < NumPoints; ++i)
 	{
 		float Distance = SplineComponent->GetDistanceAlongSplineAtSplinePoint(i);
-		float Koeficient = Frontier.Top().Koeficient;
+		TPriorityQueueNode<int32> Top = Frontier.Top();
+		float Koeficient = Top.Koeficient;
+		while (value>=Top.EndGoal)
+		{
+			if(Top.Koeficient==0)
+				break;
+			Frontier.Pop();
+			Top = Frontier.Top();
+		}
+		if(value<Top.EndGoal)
+		{
+			float EndDistance = SplineComponent->GetDistanceAlongSplineAtSplinePoint(Top.Element);
+			float deltaDistance = (EndDistance-previousDist);
+			if(deltaDistance>0.f)
+			{
+				Koeficient=(Top.EndGoal-value)/deltaDistance;
+			}
+			else
+			{
+				Koeficient=0.0f;	
+			}
+		}
+		else
+		{
+			Koeficient=0.0f;
+		}
 		value += (Distance-previousDist)*Koeficient;
 		previousDist=Distance;
 
@@ -276,7 +349,7 @@ void USplineGenerator::GenerateRandomTangle( int32 NumberOfPoints,float minDist,
 				float EndDistance = SplineComponent->GetDistanceAlongSplineAtSplinePoint(Element);
 				float delta = EndDistance-Distance;
 				float koeficient2 = Diameter/delta;
-				Frontier.Push(Element,koeficient2);
+				Frontier.Push(Element,koeficient2,value+Diameter);
 				intGetIndex++;
 				UE_LOG(LogTemp, Warning, TEXT("FrontierSize= %d"), Frontier.Size());
 			}
@@ -298,7 +371,7 @@ void USplineGenerator::GenerateRandomTangle( int32 NumberOfPoints,float minDist,
 }
 
 
-FVector USplineGenerator::GetRandomPointWithinBounds(float AreaSizeX,float AreaSizeY) const
+FVector USplineGenerator:: GetRandomPointWithinBounds(float AreaSizeX,float AreaSizeY) const
 {
 	return FVector(
 		FMath::FRandRange(-AreaSizeX, AreaSizeX),

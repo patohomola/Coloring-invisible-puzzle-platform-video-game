@@ -1,11 +1,11 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SplineToHaven.h"
+#include "JumpingUpPlatform.h"
 
 
 // Sets default values
-ASplineToHaven::ASplineToHaven()
+AJumpingUpPlatform::AJumpingUpPlatform()
 {
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -14,13 +14,19 @@ ASplineToHaven::ASplineToHaven()
 }
 
 // Called when the game starts or when spawned
-void ASplineToHaven::BeginPlay()
+void AJumpingUpPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-FIntVector ASplineToHaven::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ)
+// Called every frame
+void AJumpingUpPlatform::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+}
+
+FIntVector AJumpingUpPlatform::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ)
 {
 	int Offset=0;
 	FIntVector ExitVector;
@@ -34,27 +40,21 @@ FIntVector ASplineToHaven::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 
 	
 		
 	FVector pos = GridActor->GridCordToRealCord((FVector)StartPos - FVector(Offset - ((float)SizeX/2),-((float)SizeY/2),-0.5));
-	ASplineActor* newSplineActor = GetWorld()->SpawnActor<ASplineActor>(SplineActor,pos+FVector(0,0,30),FRotator::ZeroRotator,SpawnParams);
-
-	USplineComponent* thing=newSplineActor->GetSplineComponent();
-	SplineGenerator->SetSplineActor(newSplineActor->GetSplineComponent());
+	APlatformSplineActor* newSplineActor = GetWorld()->SpawnActor<APlatformSplineActor>(pos+FVector(0,0,30),FRotator::ZeroRotator,SpawnParams);
+	USplineComponent* uspline = newSplineActor->GetSplineComponent();
+	
+	SplineGenerator->SetSplineActor(uspline);
 	SplineGenerator->SetArea(FVector2f(Area.X,Area.Y));
-	SplineGenerator->GenerateRandomTangle(10,500.f,0.0f, 0.0f);
+	SplineGenerator->GenerateSlowlyElevatedLine(30000.f,0.2f);
+	
+	TArray<FVector> points= newSplineActor->GetDistributedPointsOnSpline(750.f);
+	for (auto Point : points)
+	{
+		GridActor->BuildPlatform(GridActor->RealCordToGridCord(Point),FVector(1,1,0.1),EMaterialSplat::Visible);
+	}
 
-	float x = (float)SizeX/2-1.25f;
-	float y=2.3;//skip row
-
-	FVector pos2=(FVector)((FVector)StartPos+FVector(1-Offset,y,0));
-	FVector Size =FVector(x,0.1,1);
-	if(Size.X>0.1f)
-		GridActor->BuildPlatform(pos2,Size,EMaterialSplat::Visible);
-	pos2+=FVector(x+0.6,0,0);
-	Size= FVector(SizeX-x-2.6,0.1,1);
-	if(Size.X>0.1f)
-		GridActor->BuildPlatform(pos2,Size,EMaterialSplat::Visible);
-
-	newSplineActor->UpdateMesh();
 	
 	return ExitVector;
 }
+
 

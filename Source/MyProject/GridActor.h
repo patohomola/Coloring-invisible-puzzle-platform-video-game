@@ -65,6 +65,7 @@ public:
 	//UFUNCTION(BlueprintCallable)
 	void BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme Theme);
 	FVector GridCordToRealCord(FVector position);
+	FVector RealCordToGridCord(FVector realPosition);
 	void GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation,
 	                         FVector& Scale);
 

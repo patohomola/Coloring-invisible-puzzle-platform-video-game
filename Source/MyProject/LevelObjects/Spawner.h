@@ -17,6 +17,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Spawning")
 	void SpawnObject(FVector Origin, FVector BoxExtent);
+	void SpawnObjects(FVector Origin, FVector BoxExtnet, int n);
 
 protected:
 	// Called when the game starts or when spawned

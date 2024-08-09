@@ -85,7 +85,7 @@ public:
 	AMovingPlatform* BuildMovingPlatform(FVector StartPosition,FVector EndPosition,float Duration, FVector scalingFactor, EMaterialSplat type,float Alpha,bool bMovingForward);
 
 	UFUNCTION(BlueprintCallable)
-	void SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor ,int count);
+	void SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor, int count, ASpawner* spawner);
 
 	void SpawnAmmoInSpawnBlock(FVector position, FVector scalingFactor ,int count);
 	
@@ -99,8 +99,10 @@ public:
 	TSubclassOf<AObstacle> Obstacle;
 
 	UPROPERTY(EditAnywhere)
-	ASpawner* Spawner;
-	
+	ASpawner* AmmoSpawner;
+
+	UPROPERTY(EditAnywhere)
+	ASpawner* ScoreSpawner;
 private:
 	// Array to hold references to spawned block actors
 	TArray<ABuildBlock*> SpawnedBlocks;

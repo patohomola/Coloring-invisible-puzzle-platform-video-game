@@ -206,24 +206,18 @@ void AGridActor::BuildObstacle(FVector position, FVector scalingFactor)
 
 
 
-void AGridActor::SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor, int count)
+void AGridActor::SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor, int count, ASpawner* spawner)
 {
 	FVector SpawnLocation;
 	FVector Scale;
 	GridtoWordCordinate(position,scalingFactor,SpawnLocation,Scale);
-	for (int i = 0; i < count; ++i)
-	{
-		Spawner->SpawnObject(SpawnLocation,Scale);
-	}
+	spawner->SpawnObjects(SpawnLocation,Scale,count);
 }
 
 void AGridActor::SpawnAmmoInSpawnBlock(FVector position, FVector scalingFactor, int count)
 {
 	position-=FVector(0.5f,0.5f,0);
-	for (int i = 0; i < count; ++i)
-	{
-		Spawner->SpawnObject(position,scalingFactor);
-	}
+	AmmoSpawner->SpawnObjects(position,scalingFactor,count);
 }
 
 

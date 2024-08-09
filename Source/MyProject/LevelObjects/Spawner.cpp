@@ -34,5 +34,13 @@ void ASpawner::SpawnObject(FVector Origin, FVector BoxExtent)
 		GetWorld()->SpawnActor<AActor>(ObjectToSpawn, SpawnLocation, SpawnRotation);
 }
 
+void ASpawner::SpawnObjects(FVector Origin,FVector BoxExtnet, int n)
+{
+	for (int i = 0; i < n; ++i)
+	{
+		SpawnObject(Origin,BoxExtnet);
+	}
+}
+
 
 

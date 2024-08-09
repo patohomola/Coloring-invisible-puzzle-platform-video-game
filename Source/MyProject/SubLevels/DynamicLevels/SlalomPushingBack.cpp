@@ -25,7 +25,7 @@ FIntVector ASlalomPushingBack::GenerateRoom(FIntVector StartPos, int32 SizeX, in
 	ARoom::Structure(StartPos,SizeX,SizeY,SizeZ,Offset,0,ExitVector,EHouseTheme::Normal);
 
 	GridActor->SpawnAmmoInSpawnBlockInGrid(FVector(StartPos)-FVector(Offset-1.f,-1.f,0),
-										   FVector(SizeX-2.f,SizeY-2.f,1),(int)((SizeX*SizeY)*0.4f));
+	                                       FVector(SizeX-2.f,SizeY-2.f,1),(int)((SizeX*SizeY)*0.4f), GridActor->AmmoSpawner);
 
 	for (int y = 2; y < SizeY-3; ++y)
 	{

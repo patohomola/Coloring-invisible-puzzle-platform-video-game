@@ -10,7 +10,7 @@
 #include "ARoofBuildBlock.h"
 #include  "GroundPlatform.h"
 #include "LevelObjects/MovingPlatform.h"
-#include "LevelObjects/Spawner.h"
+#include "LevelObjects/SpawnManager.h"
 #include "LevelObjects/Obstacle.h"
 
 #include "GridActor.generated.h"
@@ -66,6 +66,7 @@ public:
 	void BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme Theme);
 	FVector GridCordToRealCord(FVector position);
 	FVector RealCordToGridCord(FVector realPosition);
+	FVector GridScaleToRealScale(FVector scalingFactor);
 	void GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation,
 	                         FVector& Scale);
 
@@ -83,11 +84,6 @@ public:
 	                                     FVector scalingFactor, EMaterialSplat type);
 	
 	AMovingPlatform* BuildMovingPlatform(FVector StartPosition,FVector EndPosition,float Duration, FVector scalingFactor, EMaterialSplat type,float Alpha,bool bMovingForward);
-
-	UFUNCTION(BlueprintCallable)
-	void SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor, int count, ASpawner* spawner);
-
-	void SpawnAmmoInSpawnBlock(FVector position, FVector scalingFactor ,int count);
 	
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AGroundPlatform> GroundPlatform;
@@ -98,11 +94,14 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AObstacle> Obstacle;
 
-	UPROPERTY(EditAnywhere)
+	/*UPROPERTY(EditAnywhere)
 	ASpawner* AmmoSpawner;
 
 	UPROPERTY(EditAnywhere)
-	ASpawner* ScoreSpawner;
+	ASpawner* ScoreSpawner;*/
+	
+	UPROPERTY(EditAnywhere)
+	ASpawnManager* SpawnManager;
 private:
 	// Array to hold references to spawned block actors
 	TArray<ABuildBlock*> SpawnedBlocks;

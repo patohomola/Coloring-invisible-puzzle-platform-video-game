@@ -115,6 +115,11 @@ FVector AGridActor::RealCordToGridCord(FVector realPosition)
 	position += FVector(0.5f, 0.5f, 0); // Shift back
 	return position;
 }
+FVector AGridActor::GridScaleToRealScale(FVector scalingFactor)
+{
+	return FVector(scalingFactor.X * ElementSpacing,
+					scalingFactor.Y * ElementSpacing, scalingFactor.Z*ElementHeightSpacing);
+}
 
 void AGridActor::GridtoWordCordinate(FVector position, FVector scalingFactor, FVector& SpawnLocation, FVector& Scale)
 {
@@ -206,7 +211,7 @@ void AGridActor::BuildObstacle(FVector position, FVector scalingFactor)
 
 
 
-void AGridActor::SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor, int count, ASpawner* spawner)
+/*void AGridActor::SpawnAmmoInSpawnBlockInGrid(FVector position, FVector scalingFactor, int count, ASpawner* spawner)
 {
 	FVector SpawnLocation;
 	FVector Scale;
@@ -218,7 +223,7 @@ void AGridActor::SpawnAmmoInSpawnBlock(FVector position, FVector scalingFactor, 
 {
 	position-=FVector(0.5f,0.5f,0);
 	AmmoSpawner->SpawnObjects(position,scalingFactor,count);
-}
+}*/
 
 
 

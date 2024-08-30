@@ -8,21 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/SpawnManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/SpawnManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/Sphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/Sphere.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/WaterCaustic.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/WaterCaustic.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/WaterCaustic2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/WaterCaustic2.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/AutoLevelGenerating.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/AutoLevelGenerating.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/Textures/RenderTarget/RT_PaintSplats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/Textures/RenderTarget/RT_PaintSplats.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/Textures/Transparent_T.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/Textures/Transparent_T.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Painting/Colloring.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/Colloring.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/Collectible/Ammo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/Collectible/Ammo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/gameUI/Countdown.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/gameUI/Countdown.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/SplatBrush/Splat_Paint_Brush.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/SplatBrush/Splat_Paint_Brush.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/BP_TimeAndScoreManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/BP_TimeAndScoreManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_BaseGun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_BaseGun.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_Cleaner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_Cleaner.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_DefaultPaintGun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_DefaultPaintGun.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/Granade.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/Granade.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Spawner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Spawner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Spawner.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/LevelObjects/Spawner.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/SlalomPushingBack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/DynamicLevels/SlalomPushingBack.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,6 +218,8 @@
       <workItem from="1722423714958" duration="6654000" />
       <workItem from="1722894780782" duration="3304000" />
       <workItem from="1723026240541" duration="6899000" />
+      <workItem from="1723312538990" duration="14831000" />
+      <workItem from="1724071628524" duration="1749000" />
     </task>
     <servers />
   </component>
@@ -265,6 +272,11 @@
           <url>file://$PROJECT_DIR$/Source/MyProject/SplineDirectory/Level/JumpingUpPlatform.cpp</url>
           <line>60</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/MyProject/LevelObjects/SpawnManager.h</url>
+          <line>7</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

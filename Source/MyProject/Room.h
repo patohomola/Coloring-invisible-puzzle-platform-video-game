@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "GridActor.h"
 #include "GroundPlatform.h"
+#include "LevelObjects/SpawnManager.h"
 
 #include "Room.generated.h"
 //class AGridActor;

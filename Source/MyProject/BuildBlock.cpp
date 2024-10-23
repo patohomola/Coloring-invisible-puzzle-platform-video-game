@@ -69,7 +69,7 @@ void ABuildBlock::RandomRotateBlock()
 	if (BlockMesh)
 	{
 		FRotator NewRotation = FRotator(0, FMath::RandRange(0, 3) * 90, 0);
-		BlockMesh->SetRelativeRotation(NewRotation);
+		BlockMesh->SetRelativeRotation(NewRotation); 
 	}
 }
 

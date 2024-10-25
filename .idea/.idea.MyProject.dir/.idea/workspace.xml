@@ -9,14 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/SM_PrizemieWCanvas.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/SM_PrizemieWCanvas.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_Laser.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_Laser.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/TransparentSplat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/TransparentSplat.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/CanvasTexture/SplatMaterials/SM_splatBlend_Inst.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Painting/Colloring.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/Colloring.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_BaseGun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_BaseGun.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_Cleaner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GunsBlueprint/BP_Cleaner.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Painting/DirtyCamera/UM_BlendWithOpacity.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Painting/DirtyCamera/UM_BlendWithOpacity.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +208,8 @@
       <workItem from="1728673489083" duration="477000" />
       <workItem from="1728674064151" duration="2017000" />
       <workItem from="1728676142495" duration="1342000" />
-      <workItem from="1729698122681" duration="602000" />
+      <workItem from="1729698122681" duration="1307000" />
+      <workItem from="1729764398038" duration="643000" />
     </task>
     <servers />
   </component>

@@ -44,5 +44,8 @@ void UOutputSenderComponent::ChangeThisObjectsState()
 {
 	MyState=!MyState;
 	OnStateChanged.Broadcast(MyState);
+	//OnStateChangeScript.ExecuteIfBound(MyState);
+	if(OnStateChangeScript.IsBound())
+		OnStateChangeScript.Execute(MyState);
 }
 

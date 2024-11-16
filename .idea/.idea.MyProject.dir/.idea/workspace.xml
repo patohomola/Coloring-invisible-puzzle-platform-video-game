@@ -8,15 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/Components/InputReceiverComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/Components/InputReceiverComponent.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/InteractiveObjects/AInputControllerActor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/MyProject/InteractiveObjects/AInputControllerActor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_Laser.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_Laser.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_LaserSpawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_LaserSpawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_LaserTarget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_LaserTarget.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +212,11 @@
       <workItem from="1728676142495" duration="1342000" />
       <workItem from="1729698122681" duration="1307000" />
       <workItem from="1729764398038" duration="643000" />
-      <workItem from="1730299731728" duration="15799000" />
+      <workItem from="1730299731728" duration="17445000" />
+      <workItem from="1730466995835" duration="5012000" />
+      <workItem from="1730540877904" duration="4949000" />
+      <workItem from="1730575530800" duration="4843000" />
+      <workItem from="1730643276761" duration="1482000" />
     </task>
     <servers />
   </component>

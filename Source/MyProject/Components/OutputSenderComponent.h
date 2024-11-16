@@ -1,4 +1,4 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+﻿ // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -7,6 +7,7 @@
 #include "OutputSenderComponent.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnStateChange, const bool, IsTurnedOn);
+DECLARE_DELEGATE_OneParam(FOnStateChangeScript, const bool);
 
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class MYPROJECT_API UOutputSenderComponent : public UActorComponent
@@ -39,5 +40,7 @@ private:
 public:
 	UPROPERTY(BlueprintAssignable, Category = "Dispatcher")
 	FOnStateChange OnStateChanged;
+
+	FOnStateChangeScript OnStateChangeScript;
 
 };

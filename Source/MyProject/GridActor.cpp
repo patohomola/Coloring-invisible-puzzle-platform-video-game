@@ -56,8 +56,8 @@ void AGridActor::BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme
 		return;
 	}
 
-	FVector StartLocation = GetActorLocation()+FVector(X * ElementSpacing, Y * ElementSpacing, Z*ElementHeightSpacing);
-	FRotator Rotation = FRotator::ZeroRotator;
+	const FVector StartLocation = GetActorLocation()+FVector(X * ElementSpacing, Y * ElementSpacing, Z*ElementHeightSpacing);
+	const FRotator Rotation = FRotator::ZeroRotator;
 
 	for (int32 Layer = 0; Layer < Height; ++Layer)
 	{
@@ -69,17 +69,21 @@ void AGridActor::BuildHouse(int32 X, int32 Y, int32 Z, int32 Height, EHouseTheme
 		if (Layer == 0)
 		{
 			// Ground floor
-			BlockActorClass = GroundBlockActorClasses.Num() > 0 ? GroundBlockActorClasses[FMath::RandRange(0, GroundBlockActorClasses.Num() - 1)] : nullptr;
+			BlockActorClass = GroundBlockActorClasses.Num() > 0 ?
+				GroundBlockActorClasses[FMath::RandRange(0, GroundBlockActorClasses.Num() - 1)]
+			: nullptr;
 		}
 		else if (Layer == Height - 1)
 		{
 			// Roof
-			BlockActorClass = RoofBlockActorClasses.Num() > 0 ? RoofBlockActorClasses[FMath::RandRange(0, RoofBlockActorClasses.Num() - 1)] : nullptr;
+			BlockActorClass = RoofBlockActorClasses.Num() > 0 ?
+				RoofBlockActorClasses[FMath::RandRange(0, RoofBlockActorClasses.Num() - 1)] : nullptr;
 		}
 		else
 		{
 			// Middle layers (floor)
-			BlockActorClass = FloorBlockActorClasses.Num() > 0 ? FloorBlockActorClasses[FMath::RandRange(0, FloorBlockActorClasses.Num() - 1)] : nullptr;
+			BlockActorClass = FloorBlockActorClasses.Num() > 0 ?
+				FloorBlockActorClasses[FMath::RandRange(0, FloorBlockActorClasses.Num() - 1)] : nullptr;
 		}
 
 		// Spawn block actor

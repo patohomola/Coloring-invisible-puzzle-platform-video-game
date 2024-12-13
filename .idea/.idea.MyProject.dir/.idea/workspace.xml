@@ -8,14 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/InteractiveObjects/AInputControllerActor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/MyProject/InteractiveObjects/AInputControllerActor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_LaserTarget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Lasers/Laser/A_LaserTarget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Components/OutputSenderComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/PoschodieA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/PoschodieA.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/PoscodieB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/PoscodieB.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/Prizemie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/Prizemie.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/house/Strecha.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/Strecha.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/3DBlockTileComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/3DBlockTileComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Box.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Box.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +31,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.h" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/MyProject/BlockInfo.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/ARoofBuildBlock.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/MyProject/BlockInfo.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/BlockInfo.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/Box.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyProject/Box.h" root0="FORCE_HIGHLIGHTING" />
@@ -43,7 +47,7 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Blueprints" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -217,6 +221,9 @@
       <workItem from="1730540877904" duration="4949000" />
       <workItem from="1730575530800" duration="4843000" />
       <workItem from="1730643276761" duration="1482000" />
+      <workItem from="1732128720705" duration="596000" />
+      <workItem from="1734002797595" duration="6813000" />
+      <workItem from="1734022884810" duration="4246000" />
     </task>
     <servers />
   </component>
@@ -236,24 +243,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/MyProject/Room.cpp</url>
-          <line>64</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/MyProject/LevelObjects/Obstacle.h</url>
           <line>1</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/MyProject/GroundPlatform.cpp</url>
-          <line>3</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/MyProject/GroundPlatform.cpp</url>
-          <line>10</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/MyProject/SplineDirectory/SplineGenerator.cpp</url>
@@ -274,6 +266,11 @@
           <url>file://$PROJECT_DIR$/Source/MyProject/LevelObjects/SpawnManager.h</url>
           <line>7</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/MyProject/BoxAdjacencyMap.h</url>
+          <line>2</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

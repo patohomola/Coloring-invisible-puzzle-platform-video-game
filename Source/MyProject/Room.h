@@ -28,6 +28,10 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	void BuildHouseBlock(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, EHouseTheme Theme);
+	void BuildHouseBlockWithCondition(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, EHouseTheme Theme,
+	                                  TFunction<bool(FIntVector)> Condition);
+
 	void TownSquare(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ,int& Ofset,int Exit, FIntVector& exitVector,
 	                EHouseTheme theme);
 	bool Structure(FIntVector StartPos, int32 SizeX, int32 SizeY, int32 SizeZ, int& Ofset,int Exit, FIntVector& exitVector,

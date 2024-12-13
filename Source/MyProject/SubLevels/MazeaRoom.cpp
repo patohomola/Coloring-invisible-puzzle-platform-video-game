@@ -29,9 +29,10 @@ FIntVector AMazeaRoom::GenerateRoom(FIntVector StartPos, int32 SizeX, int32 Size
 		//UE_LOG(LogTemp, Warning, TEXT("Tile %d: X = %d, Y = %d"), i, xy.X, xy.Y);
 		
 		FIntVector roadTile=StartPos+FIntVector(xy.X-Ofset,xy.Y+1,0);
-		GridActor->BuildPlatform(FVector(roadTile),
+		/*GridActor->BuildPlatform(FVector(roadTile),
 			FVector(1.f,1.f,1.f)
-			,EMaterialSplat::Invisible);
+			,EMaterialSplat::Invisible);*/
+		GridActor->BuildHouse(roadTile,3,EHouseTheme::Transparent);
 	}
 	//exitVector+=FIntVector(0,1,0);
 	return exitVector;

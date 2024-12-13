@@ -12,10 +12,10 @@ void BoxComponent::SetBoxData(const TArray<TArray<TArray<bool>>>& InBoxData)
 
 TArray<TArray<bool>> BoxComponent::GetBoxSide(EBoxSide Side) const
 {
-    int32 Width = BoxData.Num();
-    int32 Height = BoxData[0].Num();
-    int32 Depth = BoxData[0][0].Num();
-
+    const int32 Width = BoxData.Num();
+    const int32 Height = BoxData[0].Num();
+    const int32 Depth = BoxData[0][0].Num();
+    
     TArray<TArray<bool>> Result;
 
     switch (Side)

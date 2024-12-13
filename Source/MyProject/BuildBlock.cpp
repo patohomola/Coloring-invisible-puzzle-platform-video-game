@@ -3,7 +3,7 @@
 
 #include "BuildBlock.h"
 
-// Sets default values
+ // Sets default values
 ABuildBlock::ABuildBlock()
 {
 	// Set up the mesh component
@@ -36,7 +36,7 @@ void ABuildBlock::InitializeBlock(EHouseTheme Theme)
 		Materials=BlockMaterialsCleanCanvas;
 		break;
 	case EHouseTheme::Transparent:
-		Materials=BlockMaterialsCleanCanvas;
+		Materials=BlockMaterialsInvincible;
 	}
 	
 	if (Materials.Num() > 0 && BlockMesh)

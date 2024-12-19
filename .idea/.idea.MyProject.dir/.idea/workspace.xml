@@ -9,17 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0fe7226d-8b16-4d37-8f8a-44722b5c5615" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/PoschodieA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/PoschodieA.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/PoscodieB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/PoscodieB.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/Prizemie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/Prizemie.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/house/Strecha.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/house/Strecha.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/3DBlockTileComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/3DBlockTileComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/Box.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Box.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/BuildBlock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/GridActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/Room.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/Room.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/SubLevels/MazeaRoom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/AutoLevelGenerating.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/AutoLevelGenerating.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/demoLevels/Level1.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/blueprints/GameCharacter/PlayerPainter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/blueprints/GameCharacter/PlayerPainter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyProject/RoomBuilder.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +217,9 @@
       <workItem from="1730643276761" duration="1482000" />
       <workItem from="1732128720705" duration="596000" />
       <workItem from="1734002797595" duration="6813000" />
-      <workItem from="1734022884810" duration="4246000" />
+      <workItem from="1734022884810" duration="4301000" />
+      <workItem from="1734089078517" duration="2798000" />
+      <workItem from="1734541639064" duration="3513000" />
     </task>
     <servers />
   </component>

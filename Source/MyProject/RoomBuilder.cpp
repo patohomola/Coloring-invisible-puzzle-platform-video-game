@@ -21,6 +21,22 @@ void ARoomBuilder::BeginPlay()
 	//CreateRandomRoom();
 	//CreateRandomRoom();
 
+	TArray<FRoomStruct2> RoomList;
+
+	if (RoomTable)
+	{
+		static const FString ContextString(TEXT("Room Context"));
+		TArray<FRoomStruct2*> Rows;
+		RoomTable->GetAllRows(ContextString, Rows);
+
+		for (FRoomStruct2* Row : Rows)
+		{
+			RoomList.Add(*Row);
+		}
+	}
+
+	RoomStructs = RoomList;
+
 	CheckPoint =Road;
 	ARoom* NewStartRoom =GetWorld()->SpawnActor<ARoom>(StartRoom,FVector(0,0,0),FRotator::ZeroRotator);
 	NewStartRoom->GridActor=GridActor;
@@ -33,11 +49,11 @@ void ARoomBuilder::BeginPlay()
 	Road=CoridorRoom->GenerateRoom(FIntVector(Road),5,5,5);
 }
 
-FRoomStruct SelectRandomRoom(const TArray<FRoomStruct>& RoomArray)
+FRoomStruct2 SelectRandomRoom(const TArray<FRoomStruct2>& RoomArray)
 {
 	// Calculate the total weight
 	int32 TotalWeight = 0;
-	for (const FRoomStruct& Room : RoomArray)
+	for (const FRoomStruct2& Room : RoomArray)
 	{
 		TotalWeight += Room.Weight;
 	}
@@ -47,7 +63,7 @@ FRoomStruct SelectRandomRoom(const TArray<FRoomStruct>& RoomArray)
 
 	// Select the struct based on the random value and cumulative weights
 	int32 CumulativeWeight = 0;
-	for (const FRoomStruct& Room : RoomArray)
+	for (const FRoomStruct2& Room : RoomArray)
 	{
 		CumulativeWeight += Room.Weight;
 		if (RandomValue < CumulativeWeight)
@@ -85,7 +101,7 @@ void ARoomBuilder::MoveCheckPointTrigger()
 void ARoomBuilder::CreateRandomRoom()
 {
 	
-	FRoomStruct RoomStruct = SelectRandomRoom(RoomStructs);
+	FRoomStruct2 RoomStruct = SelectRandomRoom(RoomStructs);
 	ARoom* ChosenRoom =GetWorld()->SpawnActor<ARoom>(RoomStruct.Room,FVector(0,0,0),FRotator::ZeroRotator);
 	//ARoom* ChosenRoom = RoomArray[RandomIndex];
 
